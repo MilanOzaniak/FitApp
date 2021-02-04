@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Settings"
+             xmlns:local="clr-namespace:FitApp.ViewModels"
+             x:Class="FitApp.Views.SettingsView"
+             >
+    <ContentPage.BindingContext>
+        <local:SettingsViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Name"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                FontSize="Large"
+                Padding="0,10,0,5"
+                Margin="0,0,250,0">
+
+            </Label>
+            <Label Text="Gender"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                FontSize="Large"
+                Padding="0,10,0,5"
+                Margin="0,0,250,0">
+
+            </Label>
+            <Label Text="Age"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                FontSize="Large"
+                Padding="0,10,0,5"
+                Margin="0,0,250,0">
+
+            </Label>
+
+            <Entry Placeholder="Your Name"
+                   Text="{Binding Name}"
+                   FontSize="Large"
+                   MaxLength="25"
+                   Margin="0,0,200,0"
+                   TranslationX="200"
+                   TranslationY="-155" />
+
+            <Entry Placeholder="Your Age"
+                   x:Name="Age"
+                   Keyboard="Numeric"
+                   FontSize="Large"
+                   MaxLength="3"
+                   Margin="0,0,200,0"
+                   TranslationX="200"
+                   TranslationY="-110" />
+
+            <Picker Title="Your Gender"
+                    x:Name="Gender"
+                    FontSize="Large"
+                    Margin="0,0,200,0"
+                    TranslationX="200"
+                    TranslationY="-215" >
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                    <x:String>Other</x:String>
+                </Picker.Items>
+            </Picker>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

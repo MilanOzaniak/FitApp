@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitApp.Android", "FitApp\FitApp.Android\FitApp.Android.csproj", "{9B66B7F6-B3F4-45F7-A4BB-B70461576A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitApp", "FitApp\FitApp\FitApp.csproj", "{B87BF0EE-0691-4200-875A-475FA612A144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B66B7F6-B3F4-45F7-A4BB-B70461576A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B66B7F6-B3F4-45F7-A4BB-B70461576A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B66B7F6-B3F4-45F7-A4BB-B70461576A45}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9B66B7F6-B3F4-45F7-A4BB-B70461576A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B66B7F6-B3F4-45F7-A4BB-B70461576A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B66B7F6-B3F4-45F7-A4BB-B70461576A45}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B87BF0EE-0691-4200-875A-475FA612A144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87BF0EE-0691-4200-875A-475FA612A144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87BF0EE-0691-4200-875A-475FA612A144}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B87BF0EE-0691-4200-875A-475FA612A144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87BF0EE-0691-4200-875A-475FA612A144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B87BF0EE-0691-4200-875A-475FA612A144}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2F9A2B5-067C-4530-B6C9-7B7B3A79C081}
+	EndGlobalSection
+EndGlobal
