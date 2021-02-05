@@ -9,12 +9,12 @@ namespace FitApp.ViewModels
     public class SettingsViewModel : ContentPage
     {
         public string Name { get; set; }
+
+
+        public string age { get ; set; }
         public SettingsViewModel()
         {
-            if (Name == null)
-            {
-                Name = "mas maly dick";
-            }
+           
         }
     }
 }
