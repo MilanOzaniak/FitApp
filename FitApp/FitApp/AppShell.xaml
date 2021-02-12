@@ -80,6 +80,7 @@
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Main Page" Icon="tab_about.png" Route="MainPageView" ContentTemplate="{DataTemplate local:MainPageView}" />
         <ShellContent Title="Settings" Icon="tab_about.png" Route="SettingsView" ContentTemplate="{DataTemplate local:SettingsView}" />
+        <ShellContent Title="Reminders" Icon="tab_feed.png" Route="RemindersView" ContentTemplate="{DataTemplate local:RemindersView}" />
     </FlyoutItem>
 
 </Shell>

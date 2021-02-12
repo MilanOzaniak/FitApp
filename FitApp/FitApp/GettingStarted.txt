@@ -1,4 +1,4 @@
-Welcome to Xamarin.Forms! Here are some tips to get started building your app.
+elcome to Xamarin.Forms! Here are some tips to get started building your app.
 
 XAML Hot Reload
 ---------------
