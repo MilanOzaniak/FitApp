@@ -12,7 +12,6 @@ namespace FitApp.ViewModels
         public MainPageViewModel()
         {
             
-            
         }
     }
 }

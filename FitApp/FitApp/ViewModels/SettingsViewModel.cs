@@ -8,9 +8,9 @@ namespace FitApp.ViewModels
 {
     public class SettingsViewModel : ContentPage
     {
-        public string Name { get; set; }
+        public string UserName { get; set; }
 
-        public string age { get; set; }
+        public string Userage { get; set; }
         public SettingsViewModel()
         {
             

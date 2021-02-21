@@ -19,6 +19,12 @@
                    FontSize="15"
                    TextColor="White"/>
 
+            <Button Text="Next Step"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="EndAndExpand"
+                    Clicked="Button_Clicked"
+                    Margin="40"/>
+
 
         </StackLayout>
     </ContentPage.Content>

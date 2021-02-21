@@ -14,6 +14,7 @@ namespace FitApp.Views
     {
         public RegistrationBMIView()
         {
+
             InitializeComponent();
         }
 
@@ -21,5 +22,7 @@ namespace FitApp.Views
         {
             await Navigation.PushAsync(new RegistrationLevelView());
         }
+
+
     }
 }

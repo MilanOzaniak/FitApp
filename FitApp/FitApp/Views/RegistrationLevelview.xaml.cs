@@ -15,6 +15,13 @@ namespace FitApp.Views
         public RegistrationLevelView()
         {
             InitializeComponent();
+            
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync(false);
+
         }
     }
 }

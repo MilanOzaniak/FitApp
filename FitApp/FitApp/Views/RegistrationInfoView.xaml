@@ -49,9 +49,11 @@
                    TranslationY="100"/>
             
             <Button Text="Next Step"
+                    x:Name="NextStep"
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="EndAndExpand"
                     Clicked="Button_Clicked"
+                    Command="{Binding SaveandNext}"
                     Margin="40"/>
         </StackLayout>
     </ContentPage.Content>
