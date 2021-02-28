@@ -10,15 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace FitApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegistrationGenderView : ContentPage
+    public partial class WorkoutsView : ContentPage
     {
-        public RegistrationGenderView()
+        public WorkoutsView()
         {
             InitializeComponent();
         }
-        private async void Button_Clicked(object sender, EventArgs e)
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistrationBMIView());
+            await Navigation.PushAsync(new WorkoutArmsView());
         }
     }
 }

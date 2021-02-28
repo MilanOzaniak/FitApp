@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitApp.Views.WorkoutsView"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="WORKOUTS">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="BEGINNER"
+                       TextColor="SkyBlue"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="25,25,0,0"/>
+                <ImageButton Source="Armworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             Clicked="ImageButton_Clicked"
+                             />
+                <ImageButton Source="Absworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             />
+                <ImageButton Source="Legsworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             />
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

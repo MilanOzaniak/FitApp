@@ -3,18 +3,15 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:FitApp.Views"
        Title="FitApp"
-       x:Class="FitApp.AppShell">
+       x:Class="FitApp.AppShell"
+       BackgroundColor="#FF2B2B2B"
+       FlyoutBackgroundColor="#FF2B2B2B">
 
-    <!--
-        The overall app visual hierarchy is defined here, along with navigation.
-    
-        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
-    -->
 
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource BackgroundColor}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -22,29 +19,28 @@
 
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
-            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}"  />
 
             <!--
             Default Styles for all Flyout Items
-            https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyoutitem-and-menuitem-style-classes
             -->
             <Style Class="FlyoutItemLabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="White"></Setter>
             </Style>
             <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
-                <Setter Property="BackgroundColor" Value="LightBlue"></Setter>
+                <Setter Property="BackgroundColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="White" />
-                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColor}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource White}" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Selected">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="Black" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -61,7 +57,7 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource White}" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -71,16 +67,21 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <!-- 
-    
-        When the Flyout is visible this defines the content to display in the flyout.
-        FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
-        https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
-    -->
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Image Aspect="AspectFill"
+                   Source="FlyoutImage.png"
+                   Opacity="1" 
+                   HeightRequest="200"/>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Main Page" Icon="tab_about.png" Route="MainPageView" ContentTemplate="{DataTemplate local:MainPageView}" />
-        <ShellContent Title="Settings" Icon="tab_about.png" Route="SettingsView" ContentTemplate="{DataTemplate local:SettingsView}" />
-        <ShellContent Title="Reminders" Icon="tab_feed.png" Route="RemindersView" ContentTemplate="{DataTemplate local:RemindersView}" />
+        <ShellContent Title="FEATURED" Icon="mainpageicon.png" Route="MainPageView" ContentTemplate="{DataTemplate local:MainPageView}" />
+        <ShellContent Title="WORKOUTS" Icon="workoutsicon.png" Route="WorkoutsView" ContentTemplate="{DataTemplate local:WorkoutsView}" />
+        <ShellContent Title="REMINDERS" Icon="remindersicon.png" Route="RemindersView" ContentTemplate="{DataTemplate local:RemindersView}" />
+        <ShellContent Title="BMI" Icon="" Route="RegistrationBMIView" ContentTemplate="{DataTemplate local:RegistrationBMIView}" />
+        <ShellContent Title="SETTINGS" Icon="settingsicon.png" Route="SettingsView" ContentTemplate="{DataTemplate local:SettingsView}" />
     </FlyoutItem>
 
 </Shell>

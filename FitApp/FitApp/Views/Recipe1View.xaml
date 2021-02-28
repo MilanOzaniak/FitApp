@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitApp.Views.Recipe1View"
+             BackgroundColor="{StaticResource BackgroundColor}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Meal1"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="Large"/>
+                <Frame Padding="0" Margin="30,0,30,0" IsClippedToBounds="True" CornerRadius="30"  > 
+                    <Image Source="Meal1.jpg"
+                       /> 
+                </Frame>
+
+                <Label Text="Kcal"
+                       HorizontalOptions="Start"
+                       TextColor="White"
+                       FontSize="18"
+                       Padding="30,5,0,0"/>
+
+                <Label Text="Difficulty"
+                       HorizontalOptions="Start"
+                       TextColor="White"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       Padding="30,5,0,0"/>
+                
+                <Label Text="Recipe"
+                       HorizontalOptions="Start"
+                       TextColor="White"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       Padding="30,5,0,0"/>
+                
+                <Label Text="First step:"
+                       HorizontalOptions="Start"
+                       TextColor="White"
+                       FontSize="Medium"
+                       FontAttributes="Italic"
+                       Padding="30,5,0,0"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

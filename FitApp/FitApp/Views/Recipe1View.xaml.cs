@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace FitApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegistrationLevelView : ContentPage
+    public partial class Recipe1View : ContentPage
     {
-        public RegistrationLevelView()
+        public Recipe1View()
         {
             InitializeComponent();
-            
-        }
-
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PopToRootAsync(false);
-
         }
     }
 }

@@ -2,22 +2,104 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FitApp.ViewModels"
-             x:Class="FitApp.Views.MainPageView">
+             x:Class="FitApp.Views.MainPageView"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="FEATURED">
+
     <ContentPage.BindingContext>
         <local:MainPageViewModel/>
     </ContentPage.BindingContext>
 
-
-
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding Name}"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Button Text="Register"
-                    HorizontalOptions="Center"
-                    VerticalOptions="End"
-                    Clicked="Button_Clicked"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="CHECKOUT OUR FEATURED MEALS AND WORKOUTS"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="30"
+                       HorizontalTextAlignment="Center"   />
+
+                <Grid ColumnSpacing="0"
+                      RowSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                </Grid>
+                <Label Text="MEALS"
+                       TextColor="SkyBlue"
+                       HorizontalTextAlignment="Start"
+                       Margin="15,0,0,0"
+                       FontSize="15"
+                       FontAttributes="Bold"/>
+
+                <Label Text="PASTA WITH CHEESE"
+                       Margin="30,0,0,0"
+                       HorizontalTextAlignment="Start"
+                       TextColor="White"
+                       FontSize="15"
+                       FontAttributes="Bold">
+                    
+                </Label>
+
+                <ImageButton Source="JPG.jpg"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Margin="15,0,15,15"
+                             Clicked="ImageButton_Clicked"
+                             CornerRadius="15"/>
+                
+                <Label Text="Meal2"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+
+                <ImageButton Source="PNG.jpg"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Margin="15,0,15,15"
+                             Clicked="ImageButton_Clicked"
+                             CornerRadius="15"/>
+
+                <Label Text="Meal3"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+
+                <ImageButton Source="JPG.jpg"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Margin="15,0,15,15"
+                             Clicked="ImageButton_Clicked"
+                             CornerRadius="15"/>
+                
+                <Label Text="WORKOUTS"
+                       TextColor="SkyBlue"
+                       HorizontalTextAlignment="Start"
+                       Margin="15,0,0,0"
+                       FontSize="15"
+                       FontAttributes="Bold"/>
+
+                <ImageButton Source="Armworkout.jpg"
+                             Clicked="ImageButton_Clicked_1"
+                             CornerRadius="15"
+                             Margin="15,15,15,15"
+                             />
+                
+                <ImageButton Source="Absworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             />
+
+
+
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

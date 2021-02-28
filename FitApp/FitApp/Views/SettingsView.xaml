@@ -4,7 +4,7 @@
              Title="Settings"
              xmlns:local="clr-namespace:FitApp.ViewModels"
              x:Class="FitApp.Views.SettingsView"
-             
+             BackgroundColor="{StaticResource BackgroundColor}"
              >
     <ContentPage.BindingContext>
         <local:SettingsViewModel />
@@ -12,7 +12,7 @@
     
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#FF2B2B2B">
+            <StackLayout>
                 
                 
              <!--
