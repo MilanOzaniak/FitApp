@@ -1,3 +1,5 @@
 # FitApp
 
 ## ABOUT
+## FEATURES
+## RELEASES
