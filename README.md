@@ -3,12 +3,13 @@
 ## ABOUT
 
 ## FEATURES
+```
 Workout plans
 Featured meals
 Water and training reminder
 BMI calculator
 Weight loss/gain graph
-
+```
 ## RELEASES
 > 14.2. 2021
 
