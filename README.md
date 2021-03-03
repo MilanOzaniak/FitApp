@@ -18,3 +18,6 @@ Project created
 >28.2. 2021
 
 Added Workout feature
+>4.3. 2021
+
+Added Meals page
