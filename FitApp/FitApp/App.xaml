@@ -9,8 +9,10 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="BackgroundColor">#FF2B2B2B</Color>
-            <Color x:Key="White">White</Color>
-            <Color x:Key="WorkoutText">deepskyblue</Color>
+            <Color x:Key="BasicText">White</Color>
+            <Color x:Key="MainText">deepskyblue</Color>
+            <Color x:Key="LowerText">skyblue</Color>
+            <Color x:Key="Watermark">Lightslategray</Color>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>

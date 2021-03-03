@@ -6,28 +6,21 @@
              BackgroundColor="{StaticResource BackgroundColor}">
 
     <ContentPage.Content>
-        <ScrollView>
+        <AbsoluteLayout>
+            <ScrollView AbsoluteLayout.LayoutFlags="All"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1">
             <StackLayout>
                 <Image Source="Armworkout.jpg"/>
 
-                <Label Text="15 MINUTES ° 14 WORKOUTS"
+                    <Label Text="15 MINUTES ° 14 WORKOUTS"
                        TextColor="White"
                        FontSize="15"
                        Margin="10,0,0,0"
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Center"/>
-                <Button Text="START"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,10,0,0"
-                        WidthRequest="250"
-                        HeightRequest="40"  
-                        CornerRadius="20"
-                        BackgroundColor="SkyBlue"
-                        TextColor="White"/>
 
-                <Grid>
+                    <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
@@ -40,7 +33,7 @@
                         <Label Text="ARM RAISES"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="0"
                                Margin="15,30,0,0"/>
@@ -54,7 +47,7 @@
                         <Label Text="SIDE ARM RAISES"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="1"
                                Margin="15,30,0,0"/>
@@ -68,7 +61,7 @@
                         <Label Text="TRICEPS DIPS"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="2"
                                Margin="15,30,0,0"/>
@@ -82,13 +75,13 @@
                         <Label Text="ARM CIRCLES CLOCKWISE"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="3"
                                Margin="15,30,0,0"/>
 
                         <Label Text="00:30"
-                               TextColor="White"
+                               TextColor="{StaticResource BasicText}"
                                Grid.Column="0"
                                Grid.Row="3"
                                Margin="15,0,0,0"/>
@@ -97,7 +90,7 @@
                                COUNTERCLOCKWISE"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="4"
                                Margin="15,30,0,0"/>
@@ -111,7 +104,7 @@
                         <Label Text="DIAMOND PUSH-UPS"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="5"
                                Margin="15,30,0,0"/>
@@ -125,7 +118,7 @@
                         <Label Text="JUMPING JACKS"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="6"
                                Margin="15,30,0,0"/>
@@ -139,7 +132,7 @@
                         <Label Text="DIAGONAL PLANK"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="7"
                                Margin="15,30,0,0"/>
@@ -153,7 +146,7 @@
                         <Label Text="PUNCHES"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="8"
                                Margin="15,30,0,0"/>
@@ -167,7 +160,7 @@
                         <Label Text="PUSH-UPS"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="9"
                                Margin="15,30,0,0"/>
@@ -181,7 +174,7 @@
                         <Label Text="INCHWORMS"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="10"
                                Margin="15,30,0,0"/>
@@ -195,7 +188,7 @@
                         <Label Text="WALL PUSH-UPS"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="11"
                                Margin="15,30,0,0"/>
@@ -209,7 +202,7 @@
                         <Label Text="TRICPES STRETCH"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="12"
                                Margin="15,30,0,0"/>
@@ -223,22 +216,35 @@
                         <Label Text="STANDING BICEPS STRETCH"
                                FontSize="17"
                                FontAttributes="Bold"
-                               TextColor="{StaticResource WorkoutText}"
+                               TextColor="{StaticResource MainText}"
                                Grid.Column="0"
                                Grid.Row="13"
                                Margin="15,30,0,0"/>
 
                         <Label Text="00:30"
-                               TextColor="White"
+                               TextColor="{StaticResource BasicText}"
                                Grid.Column="0"
                                Grid.Row="13"
                                Margin="15,0,0,10"/>
+                        <Label Grid.Row="14"/>
+                        <Label Grid.Row="15"/>
+                        <Label Grid.Row="16"/>
                     </StackLayout>
                 </Grid>
                 <Label Text="@FiTapp"
-                       TextColor="LightSlateGray"
+                       TextColor="{StaticResource Watermark}"
                        HorizontalOptions="End"/>
             </StackLayout>
         </ScrollView>
+            <Button Text="START"
+                    AbsoluteLayout.LayoutBounds="0.5,0.95   ,200,60"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Margin="0,10,0,0"
+                    WidthRequest="250"
+                    HeightRequest="40"  
+                    CornerRadius="20"
+                    BackgroundColor="{StaticResource MainText}"
+                    TextColor="{StaticResource BasicText}"/>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

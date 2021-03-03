@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitApp.Views.MealsView"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="MEALS">
+    <ContentPage.Content>
+        <ScrollView x:Name="MealsScroll">
+            <StackLayout>
+                <Grid x:Name="Chooser"
+                      RowSpacing="0">
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton Source="Weightgain.png"
+                                 Grid.Row="0"
+                                 Margin="5"
+                                 CornerRadius="15"
+                                 Clicked="WeightGainScroll"/>
+                    
+                    <ImageButton Source="Weightloss.png"
+                                 Grid.Row="1"
+                                 Margin="5"
+                                 CornerRadius="15"
+                                 Clicked="WeightLossScroll"/>
+
+                    <ImageButton Source="Veganvegetarian.png"
+                                 Grid.Row="2"
+                                 Margin="5"
+                                 CornerRadius="15"
+                                 Clicked="VegetarianVeganScroll"/>
+                    
+                    <ImageButton Source="Breakfast.png"
+                                 Grid.Row="3"
+                                 Margin="5"
+                                 CornerRadius="15"
+                                 Clicked="BreakfastScroll"/>
+
+                </Grid>
+
+                <StackLayout x:Name="Weightgain"
+                             Spacing="0">
+                    
+                    <Label Text="WEIGHT GAIN"
+                           TextColor="{StaticResource MainText}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           VerticalOptions="EndAndExpand"
+                           Margin="10,0,10,0"/>
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="0"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="1"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+                    </Grid>
+                    
+                </StackLayout>
+                
+                <StackLayout x:Name="Weightloss">
+                    
+                    <Label Text="WEIGHT LOSS"
+                           TextColor="{StaticResource MainText}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           VerticalOptions="EndAndExpand"
+                           Margin="10,0,10,0"/>
+                    
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="0"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="1"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+                    </Grid>
+                    
+                </StackLayout>
+
+                <StackLayout x:Name="Veganvegetarian">
+                    
+                    <Label Text="VEGAN / VEGETARIAN"
+                           TextColor="{StaticResource MainText}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           VerticalOptions="EndAndExpand"
+                           Margin="10,0,10,0"/>
+
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="0"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="1"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+                    </Grid>
+
+                </StackLayout>
+
+                <StackLayout x:Name="Breakfast">
+                    <Label Text="BREAKFAST"
+                           TextColor="{StaticResource MainText}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           VerticalOptions="EndAndExpand"
+                           Margin="10,0,10,0"/>
+
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="0"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="Meal2title.jpg"
+                                     Grid.Column="1"
+                                     Grid.Row="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+                    </Grid>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,33 +1,151 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitApp.Views.WorkoutsView"
              BackgroundColor="{StaticResource BackgroundColor}"
              Title="WORKOUTS">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
-                <Label Text="BEGINNER"
-                       TextColor="SkyBlue"
+        <AbsoluteLayout>
+            <ScrollView x:Name="WorkoutsScroll"
+                        AbsoluteLayout.LayoutFlags="All"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Text="Beginner"
+                                FontSize="12"
+                                FontAttributes="Bold"
+                                Grid.Column="0"
+                                WidthRequest="120"
+                                HeightRequest="40"
+                                Margin="5,25,2,25"
+                                CornerRadius="15"
+                                TextColor="{StaticResource MainText}"
+                                BackgroundColor="{StaticResource BackgroundColor}"
+                                BorderColor="{StaticResource MainText}"
+                                BorderWidth="1"
+                                Clicked="Button_Clicked"
+                                
+                        />
+
+
+                        <Button Text="Intermediate"
+                                FontSize="12"
+                                FontAttributes="Bold"
+                                Grid.Column="1"
+                                WidthRequest="120"
+                                HeightRequest="30"
+                                Margin="5,25,2,25"
+                                CornerRadius="15"
+                                TextColor="{StaticResource MainText}"
+                                BackgroundColor="{StaticResource BackgroundColor}"
+                                BorderColor="{StaticResource MainText}"
+                                BorderWidth="1"
+                                Clicked="Button_Clicked_1"
+                        />
+
+                        <Button Text="Advanced"
+                                FontSize="12"
+                                FontAttributes="Bold"
+                                Grid.Column="2"
+                                WidthRequest="120"
+                                HeightRequest="30"
+                                Margin="5,25,2,25"
+                                CornerRadius="15"
+                                TextColor="{StaticResource MainText}"
+                                BackgroundColor="{StaticResource BackgroundColor}"
+                                BorderColor="{StaticResource MainText}"
+                                BorderWidth="1"
+                                Clicked="Button_Clicked_2"
+                        />
+                    </Grid>
+
+                    <StackLayout x:Name="Beginner">
+
+                        <Label Text="BEGINNER"
+                       TextColor="{StaticResource LowerText}"
                        FontSize="20"
                        FontAttributes="Bold"
-                       Margin="25,25,0,0"/>
-                <ImageButton Source="Armworkout.jpg"
+                       Margin="25,0,0,0"/>
+
+                        <ImageButton Source="Armworkout.jpg"
                              CornerRadius="15"
                              Margin="15,0,15,15"
                              Clicked="ImageButton_Clicked"
                              />
-                <ImageButton Source="Absworkout.jpg"
+
+                        <ImageButton Source="Absworkout.jpg"
                              CornerRadius="15"
                              Margin="15,0,15,15"
                              />
-                <ImageButton Source="Legsworkout.jpg"
+                        <ImageButton Source="Legsworkout.jpg"
                              CornerRadius="15"
                              Margin="15,0,15,15"
                              />
+                    </StackLayout>
+
+                    <StackLayout x:Name="Intermediate">
+
+                        <Label Text="INTERMEDIATE"
+                       TextColor="{StaticResource LowerText}"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="25,25,0,0"/>
+
+                        <ImageButton Source="Armworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             Clicked="ImageButton_Clicked"
+                             />
+
+                        <ImageButton Source="Absworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             />
+                        <ImageButton Source="Legsworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             />
+                    </StackLayout>
+
+                    <StackLayout x:Name="Advanced">
+
+                        <Label Text="ADVANCED"
+                       TextColor="{StaticResource LowerText}"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="25,25,0,0"/>
+
+                        <ImageButton Source="Armworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             Clicked="ImageButton_Clicked"
+                             />
+
+                        <ImageButton Source="Absworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             />
+                        <ImageButton Source="Legsworkout.jpg"
+                             CornerRadius="15"
+                             Margin="15,0,15,15"
+                             />
+                    </StackLayout>
 
 
-            </StackLayout>
-        </ScrollView>
+
+                </StackLayout>
+
+            </ScrollView>
+            <ImageButton AbsoluteLayout.LayoutBounds="0.95,0.95,80,80"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         Source="UPbutton.png"
+                         BackgroundColor="Transparent"
+                         BorderColor="Transparent"
+                         Clicked="ImageButton_Clicked_1"/>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

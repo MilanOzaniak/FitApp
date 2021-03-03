@@ -1,29 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:FitApp.ViewModels"
              x:Class="FitApp.Views.MainPageView"
              BackgroundColor="{StaticResource BackgroundColor}"
              Title="FEATURED">
-
-    <ContentPage.BindingContext>
-        <local:MainPageViewModel/>
-    </ContentPage.BindingContext>
-
+    
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                
                 <Label Text="CHECKOUT OUR FEATURED MEALS AND WORKOUTS"
                        TextColor="White"
                        FontAttributes="Bold"
                        FontSize="30"
-                       HorizontalTextAlignment="Center"   />
+                       HorizontalTextAlignment="Center"/>
 
                 <Grid ColumnSpacing="0"
                       RowSpacing="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
@@ -41,15 +35,13 @@
                        HorizontalTextAlignment="Start"
                        TextColor="White"
                        FontSize="15"
-                       FontAttributes="Bold">
-                    
-                </Label>
+                       FontAttributes="Bold"/>
 
-                <ImageButton Source="JPG.jpg"
+                <ImageButton Source="Meal1cropped.jpg"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              Margin="15,0,15,15"
-                             Clicked="ImageButton_Clicked"
+                             Command="{Binding Recipe}"
                              CornerRadius="15"/>
                 
                 <Label Text="Meal2"
@@ -58,11 +50,10 @@
                        FontSize="Medium"
                        FontAttributes="Bold"/>
 
-                <ImageButton Source="PNG.jpg"
+                <ImageButton Source="Meal2cropped.jpg"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              Margin="15,0,15,15"
-                             Clicked="ImageButton_Clicked"
                              CornerRadius="15"/>
 
                 <Label Text="Meal3"
@@ -71,11 +62,10 @@
                        FontSize="Medium"
                        FontAttributes="Bold"/>
 
-                <ImageButton Source="JPG.jpg"
+                <ImageButton Source="Meal1cropped.jpg"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              Margin="15,0,15,15"
-                             Clicked="ImageButton_Clicked"
                              CornerRadius="15"/>
                 
                 <Label Text="WORKOUTS"
@@ -86,18 +76,12 @@
                        FontAttributes="Bold"/>
 
                 <ImageButton Source="Armworkout.jpg"
-                             Clicked="ImageButton_Clicked_1"
                              CornerRadius="15"
-                             Margin="15,15,15,15"
-                             />
+                             Margin="15,15,15,15" />
                 
                 <ImageButton Source="Absworkout.jpg"
                              CornerRadius="15"
-                             Margin="15,0,15,15"
-                             />
-
-
-
+                             Margin="15,0,15,15"/>
 
             </StackLayout>
         </ScrollView>

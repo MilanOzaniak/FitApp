@@ -1,26 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitApp.Views.RegistrationBMIView"
+             x:Class="FitApp.Views.BMIView"
              BackgroundColor="{StaticResource BackgroundColor}">
-
-
+    <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="How tall are you ?"
+                <Label Text="How tall are you ?"
                TextColor="White"
                FontSize="22"
                Padding="0,100,0,0"
                HorizontalTextAlignment="Center"/>
 
-            <Label Text="{Binding Source={x:Reference HeightSlider},
+                <Label Text="{Binding Source={x:Reference HeightSlider},
                     Path=Value,
                     StringFormat='{0:F0} cm'}"
                
                TextColor="White"
                HorizontalTextAlignment="Center"/>
 
-            <Slider x:Name="HeightSlider"
+                <Slider x:Name="HeightSlider"
                 MaximumTrackColor="White"
                 ThumbColor="White"
 
@@ -29,18 +28,18 @@
                 Minimum="40"
                 Value="{Binding CM}"/>
 
-            <Label Text="How much do you weight ?"
+                <Label Text="How much do you weight ?"
                TextColor="White"
                FontSize="22"
                HorizontalTextAlignment="Center"/>
 
-            <Label Text="{Binding Source={x:Reference WeightSlider},
+                <Label Text="{Binding Source={x:Reference WeightSlider},
                     Path=Value,
                     StringFormat='{0:F0} kg'}"
                TextColor="White"
                HorizontalTextAlignment="Center"/>
 
-            <Slider x:Name="WeightSlider"
+                <Slider x:Name="WeightSlider"
                 MaximumTrackColor="White"
                 ThumbColor="White"
                 Margin="20,0,20,0"
@@ -48,17 +47,18 @@
                 Minimum="40"
                 Value="{Binding Weight}"/>
 
-            <Label Text="Your Bmi is"
+                <Label Text="Your Bmi is"
                FontSize="16"
                TextColor="White"
                HorizontalTextAlignment="Center"
                Padding="0,20,0,0"/>
 
-            <Label Text="{Binding Bmi}"
+                <Label Text="{Binding Bmi}"
                x:Name="YourBMI"
                HorizontalTextAlignment="Center"
                TextColor="White"
                FontSize="48"/>
 
-        </StackLayout>
+            </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
