@@ -13,20 +13,20 @@ Weight loss/gain graph
 ```
 ## RELEASES
 > 14.2. 2021
-
+```
 Project created
-
+```
 >28.2. 2021
-
+```
 Added Workout feature
 Updated MainPage UI
-
+```
 >4.3. 2021
-
+```
 Added Meals page
 Updated Workouts UI
-
+```
 >9.3. 2021
-
+```
 Added BMI calculator
-
+```
