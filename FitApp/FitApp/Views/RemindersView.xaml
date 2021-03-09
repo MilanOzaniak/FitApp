@@ -4,10 +4,17 @@
              x:Class="FitApp.Views.RemindersView"
              BackgroundColor="{StaticResource BackgroundColor}">
     <ContentPage.Content>
-        <StackLayout>
+        <Frame CornerRadius="15"
+               BorderColor="Blue"
+              Margin="10">
+            <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

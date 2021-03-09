@@ -51,7 +51,7 @@
                            VerticalOptions="EndAndExpand"
                            Margin="10,0,10,0"/>
                     
-                    <Grid RowSpacing="0">
+                    <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="180"/>
                             <RowDefinition Height="180"/>
@@ -123,7 +123,7 @@
                            VerticalOptions="EndAndExpand"
                            Margin="10,0,10,0"/>
                     
-                    <Grid RowSpacing="0">
+                    <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="180"/>
                             <RowDefinition Height="180"/>
@@ -267,7 +267,7 @@
                            VerticalOptions="EndAndExpand"
                            Margin="10,0,10,0"/>
 
-                    <Grid RowSpacing="0">
+                    <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="180"/>
                             <RowDefinition Height="180"/>

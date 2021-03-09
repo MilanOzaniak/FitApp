@@ -2,63 +2,128 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitApp.Views.BMIView"
+             xmlns:local="clr-namespace:FitApp.ViewModels"
              BackgroundColor="{StaticResource BackgroundColor}">
+    
+    <ContentPage.BindingContext>
+        <local:BMIViewModel/>
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>
+        
         <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                <Label Text="How tall are you ?"
-               TextColor="White"
-               FontSize="22"
-               Padding="0,100,0,0"
-               HorizontalTextAlignment="Center"/>
+                <ImageButton Source="ManGender.png"
+                             Grid.Column="0"
+                             Margin="10"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             CornerRadius="20"
+                             BorderWidth="1"
+                             BorderColor="{StaticResource MainText}"/>
 
-                <Label Text="{Binding Source={x:Reference HeightSlider},
-                    Path=Value,
-                    StringFormat='{0:F0} cm'}"
-               
-               TextColor="White"
-               HorizontalTextAlignment="Center"/>
+                <ImageButton Source="WomanGender.png"
+                             Grid.Column="1"
+                             Margin="10"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             CornerRadius="20"
+                             BorderWidth="1"
+                             BorderColor="{StaticResource MainText}"/>
+            </Grid>
 
-                <Slider x:Name="HeightSlider"
-                MaximumTrackColor="White"
-                ThumbColor="White"
+            <StackLayout>
 
-                Margin="20,0,20,0"
-                Maximum="220"
-                Minimum="40"
-                Value="{Binding CM}"/>
+                <Frame BackgroundColor="{StaticResource BackgroundColor}"
+                       CornerRadius="15"
+                       BorderColor="{StaticResource MainText}"
+                       Margin="20,20,20,0">
+                    <StackLayout>
+                        <Label Text="HEIGHT"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="22"
+                               HorizontalTextAlignment="Center"/>
+ 
+                        <Label Text="{Binding Source={x:Reference HeightSlider},
+                        Path=Value,
+                        StringFormat='{0:F0} cm'}"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource LowerText}"
+                               HorizontalTextAlignment="Center"/>
 
-                <Label Text="How much do you weight ?"
-               TextColor="White"
-               FontSize="22"
-               HorizontalTextAlignment="Center"/>
+                        <Slider x:Name="HeightSlider"
+                                MaximumTrackColor="{StaticResource BasicText}"
+                                ThumbColor="{StaticResource MainText}"
+                                Margin="20,0,20,0"
+                                Maximum="220"
+                                Minimum="40"
+                                Value="{Binding Height, Mode=TwoWay}"/>
+                    </StackLayout>
+                </Frame>
 
-                <Label Text="{Binding Source={x:Reference WeightSlider},
-                    Path=Value,
-                    StringFormat='{0:F0} kg'}"
-               TextColor="White"
-               HorizontalTextAlignment="Center"/>
+                <Frame BackgroundColor="{StaticResource BackgroundColor}"
+                       CornerRadius="15"
+                       BorderColor="{StaticResource MainText}"
+                       Margin="20,20,20,0">
 
-                <Slider x:Name="WeightSlider"
-                MaximumTrackColor="White"
-                ThumbColor="White"
-                Margin="20,0,20,0"
-                Maximum="300"
-                Minimum="40"
-                Value="{Binding Weight}"/>
+                    <StackLayout>
 
-                <Label Text="Your Bmi is"
-               FontSize="16"
-               TextColor="White"
-               HorizontalTextAlignment="Center"
-               Padding="0,20,0,0"/>
+                        <Label Text="WEIGHT"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="22"
+                               HorizontalTextAlignment="Center"
+                               Margin="0,0,0,0"/>
 
-                <Label Text="{Binding Bmi}"
-               x:Name="YourBMI"
-               HorizontalTextAlignment="Center"
-               TextColor="White"
-               FontSize="48"/>
+                        <Label Text="{Binding Source={x:Reference WeightSlider},
+                        Path=Value,
+                        StringFormat='{0:F0} kg'}"
+                               TextColor="{StaticResource LowerText}"
+                               HorizontalTextAlignment="Center"
+                               FontSize="25"
+                               FontAttributes="Bold"/>
+
+
+                        <Slider x:Name="WeightSlider"
+                                MaximumTrackColor="{StaticResource BasicText}"
+                                ThumbColor="{StaticResource MainText}"
+                                Margin="20,0,20,0"
+                                Maximum="300"
+                                Minimum="40"
+                                Value="{Binding Weight, Mode=TwoWay}"/>
+                    </StackLayout>
+                </Frame>
+
+                <Button Text="CALCULATE"
+                        Margin="20"
+                        HeightRequest="50"
+                        BackgroundColor="{StaticResource MainText}"
+                        CornerRadius="15"
+                        Command="{Binding CalculateBMI}"/>
+
+                <Label Text="YOUR BMI IS"
+                       Margin="-5"
+                       FontSize="22"
+                       TextColor="{StaticResource MainText}"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="{Binding BMI}" 
+                       FontSize="35"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource LowerText}"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="{Binding BMIText}"
+                       TextColor="{StaticResource BasicText}"
+                       FontSize="25"
+                       HorizontalTextAlignment="Center"/>
 
             </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
