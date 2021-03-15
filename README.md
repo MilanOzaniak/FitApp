@@ -1,4 +1,4 @@
-# <h1 align = "center"> FitApp </h1>
+<h1 align = "center"> FitApp </h1>
 
 <section id = "About">
 <h1>ABOUT<h1>
