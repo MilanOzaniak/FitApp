@@ -1,41 +1,31 @@
 # <h1 align = "center"> FitApp </h1>
 
 <section id = "About">
-## ABOUT
-FitApp is an application for weight loss, burning calories, gaining muscle and strength. Application offers training sessions focused on the abdominal muscles, legs, shoulders, arms, chest and whole body. You can choose from our recommended meals, whether you want to gain weight or lose weight. Water reminder will help you to stay hydrated while Training reminder will help you to not forget your training.
+<h1>ABOUT<h1>
+<a>FitApp is an application for weight loss, burning calories, gaining muscle and strength. Application offers training sessions focused on the abdominal muscles, legs, shoulders, arms, chest and whole body. You can choose from our recommended meals, whether you want to gain weight or lose weight. Water reminder will help you to stay hydrated while Training reminder will help you to not forget your training.<a>
 </section>
 
 <section id = "Features">
-## FEATURES
-```
-Workout plans
-Featured meals
-Water and training reminder
-BMI calculator
-Weight loss/gain graph
-```
+<h1>FEATURES<h1>
+<li>Workout plans<li>
+<li>Featured meals<li>
+<li>Water and training reminder<li>
+<li>BMI calculator<li>
+<li>Weight loss/gain graph<li>
 </section>
 
 <section id = "Releases">
-## RELEASES
-> 14.2. 2021
-```
-Project created
-```
->28.2. 2021
-```
-Added Workout feature
-Updated MainPage UI
-```
->4.3. 2021
-```
-Added Meals page
-Updated Workouts UI
-```
->9.3. 2021
-```
-Added BMI calculator
-```
+<h1>RELEASES<h1>
+<a><li>14.2. 2021<li>
+<li>Project created<li>
+<li>28.2. 2021<li>
+<li>Added Workout feature<li>
+<li>Updated MainPage UI<li>
+<li>4.3. 2021<li>
+<li>Added Meals page<li>
+<li>Updated Workouts UI<li>
+<li>9.3. 2021<li>
+<li>Added BMI calculator<li> <a>
 </section>
 
 
