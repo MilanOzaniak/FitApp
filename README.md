@@ -2,7 +2,7 @@
 
 <section id = "About">
 <h1>ABOUT<h1>
-<a>FitApp is an application for weight loss, burning calories, gaining muscle and strength. Application offers training sessions focused on the abdominal muscles, legs, shoulders, arms, chest and whole body. You can choose from our recommended meals, whether you want to gain weight or lose weight. Water reminder will help you to stay hydrated while Training reminder will help you to not forget your training.<a>
+<p>FitApp is an application for weight loss, burning calories, gaining muscle and strength. Application offers training sessions focused on the abdominal muscles, legs, shoulders, arms, chest and whole body. You can choose from our recommended meals, whether you want to gain weight or lose weight. Water reminder will help you to stay hydrated while Training reminder will help you to not forget your training.<p>
 </section>
 
 <section id = "Features">
@@ -16,7 +16,7 @@
 
 <section id = "Releases">
 <h1>RELEASES<h1>
-<a><li>14.2. 2021<li>
+<li>14.2. 2021<li>
 <li>Project created<li>
 <li>28.2. 2021<li>
 <li>Added Workout feature<li>
@@ -25,7 +25,7 @@
 <li>Added Meals page<li>
 <li>Updated Workouts UI<li>
 <li>9.3. 2021<li>
-<li>Added BMI calculator<li> <a>
+<li>Added BMI calculator<li>
 </section>
 
 
