@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitApp.Views.BMIView"
              xmlns:local="clr-namespace:FitApp.ViewModels"
-             BackgroundColor="{StaticResource BackgroundColor}">
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="BMI CALCULATOR  ">
     
     <ContentPage.BindingContext>
         <local:BMIViewModel/>
@@ -20,7 +21,7 @@
 
                 <ImageButton Source="ManGender.png"
                              Grid.Column="0"
-                             Margin="10"
+                             Margin="5"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              CornerRadius="20"
@@ -29,17 +30,17 @@
 
                 <ImageButton Source="WomanGender.png"
                              Grid.Column="1"
-                             Margin="10"
+                             Margin="5"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              CornerRadius="20"
                              BorderWidth="1"
-                             BorderColor="{StaticResource MainText}"/>
+                             BorderColor="Blue"/>
             </Grid>
 
             <StackLayout>
 
-                <Frame BackgroundColor="{StaticResource BackgroundColor}"
+                <Frame BackgroundColor="#FF222323"
                        CornerRadius="15"
                        BorderColor="{StaticResource MainText}"
                        Margin="20,20,20,0">
@@ -67,7 +68,7 @@
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="{StaticResource BackgroundColor}"
+                <Frame BackgroundColor="#FF222323"
                        CornerRadius="15"
                        BorderColor="{StaticResource MainText}"
                        Margin="20,20,20,0">
@@ -93,7 +94,7 @@
                                 MaximumTrackColor="{StaticResource BasicText}"
                                 ThumbColor="{StaticResource MainText}"
                                 Margin="20,0,20,0"
-                                Maximum="300"
+                                Maximum="200"
                                 Minimum="40"
                                 Value="{Binding Weight, Mode=TwoWay}"/>
                     </StackLayout>
@@ -112,14 +113,14 @@
                        TextColor="{StaticResource MainText}"
                        HorizontalOptions="Center"/>
 
-                <Label Text="{Binding BMI}" 
+                <Label Text="{Binding BMI}"
                        FontSize="35"
                        FontAttributes="Bold"
                        TextColor="{StaticResource LowerText}"
                        HorizontalOptions="Center"/>
 
                 <Label Text="{Binding BMIText}"
-                       TextColor="{StaticResource BasicText}"
+                       TextColor="{Binding BMIColor}"
                        FontSize="25"
                        HorizontalTextAlignment="Center"/>
 

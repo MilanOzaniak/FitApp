@@ -12,30 +12,31 @@ namespace FitApp.ViewModels
 {
     public class BMIViewModel : INotifyPropertyChanged
     {
-        int weight;
-        int height;
+        int _weight;
+        int _height;
         int m = 10000;
         double BmiNum;
         double Square;
-        string Bmi;
-        string BmiText;
+        string _Bmi;
+        string _BmiText;
+        Color _color;
 
         public event PropertyChangedEventHandler PropertyChanged;
         public int Weight 
         {
-          get => weight;
+          get => _weight;
           set
           {
-                weight = value;
+                _weight = value;
                 OnPropertyChanged();
           }
         }   
         public int Height 
         {
-          get => height;
+          get => _height;
           set
           {
-                height = value;
+                _height = value;
                 OnPropertyChanged();
           }
         }
@@ -43,12 +44,12 @@ namespace FitApp.ViewModels
         {
             get
             {
-                return Bmi;
+                return _Bmi;
             }
 
             set
             {
-                Bmi = value;
+                _Bmi = value;
                 OnPropertyChanged();
             }
         }
@@ -56,11 +57,20 @@ namespace FitApp.ViewModels
         {
             get
             {
-                return BmiText;
+                return _BmiText;
             }
             set
             {
-                BmiText = value;
+                _BmiText = value;
+                OnPropertyChanged();
+            }
+        }
+        public Color BMIColor
+        {
+            get => _color;
+            set
+            {
+                _color = value;
                 OnPropertyChanged();
             }
         }
@@ -75,30 +85,34 @@ namespace FitApp.ViewModels
 
         void Calculate()
         {
-            Square = height * height;
+            Square = _height * _height;
             Square = Square / m;
-            BmiNum = weight / Square;
+            BmiNum = _weight / Square;
             BMI = Math.Round(BmiNum, 2, MidpointRounding.AwayFromZero).ToString();
 
             if (BmiNum < 18.5)
             {
                 BMIText = "You are underweight";
+                BMIColor = Color.Orange;
             }
             else if ( BmiNum > 18.6 )
             {
                 if (BmiNum < 24.9)
                 {
                     BMIText = "Your weight is normal";
+                    BMIColor = Color.Green;
                 }
                 else if (BmiNum > 25)
                 {
                     if (BmiNum < 29.9)
                     {
                         BMIText = "You are overweight";
+                        BMIColor = Color.Orange;
                     }
                     else if (BmiNum > 30)
                     {
                         BMIText = "You are obese";
+                        BMIColor = Color.Red;
                     }
                 }
             }

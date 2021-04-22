@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FitApp.Services;
 using SQLite;
 
 namespace FitApp.Models
 {
-    public class User
+    public class Reminders
     {
-        [PrimaryKey]
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        public string Roaster { get; set; }
         public string Name { get; set; }
-        public string Age { get; set; }
-
-        public string ID { get; set; }
-
     }
 }

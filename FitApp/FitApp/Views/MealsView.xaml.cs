@@ -36,5 +36,15 @@ namespace FitApp.Views
         {
             await MealsScroll.ScrollToAsync(1, Breakfast.Y, true);
         }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Recipe1View());
+        }
+
+        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

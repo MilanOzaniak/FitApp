@@ -35,14 +35,16 @@
                        HorizontalTextAlignment="Start"
                        TextColor="White"
                        FontSize="15"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       />
 
                 <ImageButton Source="Meal1cropped.jpg"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              Margin="15,0,15,15"
                              Command="{Binding Recipe}"
-                             CornerRadius="15"/>
+                             CornerRadius="15"
+                             Clicked="ImageButton_Clicked"/>
                 
                 <Label Text="Meal2"
                        HorizontalTextAlignment="Center"

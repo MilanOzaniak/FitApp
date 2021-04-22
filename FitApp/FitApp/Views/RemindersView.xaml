@@ -1,20 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FitApp.ViewModels"
+             xmlns:mvvm="clr-namespace:MvvmHelpers;assembly=MvvmHelpers"
+             xmlns:models="clr-namespace:FitApp.Models"
+             x:Name="RemindersPage"
              x:Class="FitApp.Views.RemindersView"
+             x:DataType="viewmodels:RemindersViewModel"
+             Title="REMINDERS"
              BackgroundColor="{StaticResource BackgroundColor}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="AddIcon.png"
+                 Order="Primary"
+                 Priority="0"
+                 Command="{Binding AddCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <viewmodels:RemindersViewModel/>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
-        <Frame CornerRadius="15"
-               BorderColor="Blue"
-              Margin="10">
-            <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-                <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            </StackLayout>
-        </Frame>
+        
+        <ListView CachingStrategy="RecycleElement"
+                  HasUnevenRows="True"
+                  BackgroundColor="Transparent"
+                  IsPullToRefreshEnabled="True"
+                  IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                  RefreshCommand="{Binding RefreshCommand}"
+                  ItemsSource="{Binding Reminders}"
+                  SelectionMode="None"
+                  SeparatorVisibility="None">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="models:Reminders">
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Frame CornerRadius="15"
+                                   HasShadow="True"
+                                   BorderColor="{StaticResource MainText}">
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <Label FontSize="20"
+                                                   Text="{Binding Name}"
+                                                   VerticalOptions="Center"
+                                                   Grid.Column="0"
+                                                   Grid.Row="0"/>
+
+                                            <Label FontSize="30"
+                                                   Text="{Binding Roaster}"
+                                                   VerticalOptions="Center"
+                                                   FontAttributes="Bold"
+                                                   Grid.Column="0"
+                                                   Grid.Row="1"/>
+                                        </Grid>
+                                        <ImageButton Source="DeleteIcon.png"
+                                                     BackgroundColor="Transparent"
+                                                     WidthRequest="60"
+                                                     Command="{Binding Source={x:Reference RemindersPage}, Path=BindingContext.RemoveCommand}"
+                                                     CommandParameter="{Binding .}"
+                                                     HorizontalOptions="End"
+                                                     VerticalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

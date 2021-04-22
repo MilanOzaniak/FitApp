@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitApp.Views.WorkoutsView"
+             xmlns:local="clr-namespace:FitApp.ViewModels"
              BackgroundColor="{StaticResource BackgroundColor}"
              Title="WORKOUTS">
+    
+
     <ContentPage.Content>
         <AbsoluteLayout>
             <ScrollView x:Name="WorkoutsScroll"
@@ -26,11 +29,10 @@
                                 TextColor="{StaticResource MainText}"
                                 BackgroundColor="{StaticResource BackgroundColor}"
                                 BorderColor="{StaticResource MainText}"
+                                Command="{Binding StartWorkout1}"
                                 BorderWidth="1"
-                                Clicked="Button_Clicked"
-                                
+                                Clicked="Button_Clicked"      
                         />
-
 
                         <Button Text="Intermediate"
                                 FontSize="12"
@@ -66,83 +68,79 @@
                     <StackLayout x:Name="Beginner">
 
                         <Label Text="BEGINNER"
-                       TextColor="{StaticResource LowerText}"
-                       FontSize="20"
-                       FontAttributes="Bold"
-                       Margin="25,0,0,0"/>
+                               TextColor="{StaticResource LowerText}"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               Margin="25,0,0,0"/>
 
                         <ImageButton Source="Armworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
-                             Clicked="ImageButton_Clicked"
-                             />
+                                     CornerRadius="15"
+                                     Clicked="ImageButton_Clicked"
+                                     Margin="15,0,15,15"/>
 
                         <ImageButton Source="Absworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
-                             />
+                                     CornerRadius="15"
+                                     Clicked="ImageButton_Clicked_2"
+                                     Margin="15,0,15,15"/>
+
                         <ImageButton Source="Legsworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
-                             />
+                                     CornerRadius="15"
+                                     Margin="15,0,15,15"/>
                     </StackLayout>
 
                     <StackLayout x:Name="Intermediate">
 
                         <Label Text="INTERMEDIATE"
-                       TextColor="{StaticResource LowerText}"
-                       FontSize="20"
-                       FontAttributes="Bold"
-                       Margin="25,25,0,0"/>
+                               TextColor="{StaticResource LowerText}"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               Margin="25,25,0,0"/>
 
                         <ImageButton Source="Armworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
-                             Clicked="ImageButton_Clicked"
+                                     CornerRadius="15"
+                                     Margin="15,0,15,15"
+                                     Clicked="ImageButton_Clicked"
                              />
 
                         <ImageButton Source="Absworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
+                                     CornerRadius="15"
+                                     Margin="15,0,15,15"
                              />
                         <ImageButton Source="Legsworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
+                                     CornerRadius="15"
+                                     Margin="15,0,15,15"
                              />
                     </StackLayout>
 
                     <StackLayout x:Name="Advanced">
 
                         <Label Text="ADVANCED"
-                       TextColor="{StaticResource LowerText}"
-                       FontSize="20"
-                       FontAttributes="Bold"
-                       Margin="25,25,0,0"/>
+                               TextColor="{StaticResource LowerText}"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               Margin="25,25,0,0"/>
 
                         <ImageButton Source="Armworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
-                             Clicked="ImageButton_Clicked"
+                                     CornerRadius="15"
+                                     Margin="15,0,15,15"
+                                     Clicked="ImageButton_Clicked"
                              />
 
                         <ImageButton Source="Absworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
+                                     CornerRadius="15"
+                                     Margin="15,0,15,15"
                              />
                         <ImageButton Source="Legsworkout.jpg"
-                             CornerRadius="15"
-                             Margin="15,0,15,15"
+                                     CornerRadius="15"
+                                     Margin="15,0,15,15"
                              />
                     </StackLayout>
-
-
-
                 </StackLayout>
-
             </ScrollView>
+            
             <ImageButton AbsoluteLayout.LayoutBounds="0.95,0.95,80,80"
                          AbsoluteLayout.LayoutFlags="PositionProportional"
-                         Source="UPbutton.png"
+                         Source="ScrollUpIcon.png"
                          BackgroundColor="Transparent"
                          BorderColor="Transparent"
                          Clicked="ImageButton_Clicked_1"/>

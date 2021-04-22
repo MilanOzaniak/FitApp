@@ -13,6 +13,6 @@
             <Color x:Key="MainText">deepskyblue</Color>
             <Color x:Key="LowerText">skyblue</Color>
             <Color x:Key="Watermark">Lightslategray</Color>
-        </ResourceDictionary>        
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

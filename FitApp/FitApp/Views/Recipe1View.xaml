@@ -4,45 +4,176 @@
              x:Class="FitApp.Views.Recipe1View"
              BackgroundColor="{StaticResource BackgroundColor}">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
-                <Label Text="{Binding Title}"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"
-                       FontSize="Large"/>
-                <Frame Padding="0" Margin="30,0,30,0" IsClippedToBounds="True" CornerRadius="30"  > 
-                    <Image Source="Meal1.jpg"
-                       /> 
-                </Frame>
+        <AbsoluteLayout>
+            <ScrollView AbsoluteLayout.LayoutFlags="All"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <StackLayout>
+                    <Image Source="fitkuracieprsia.jpg"/>
 
-                <Label Text="{Binding Kcal}"
-                       HorizontalOptions="Start"
-                       TextColor="White"
-                       FontSize="18"
-                       Padding="30,5,0,0"/>
-
-                <Label Text="{Binding Difficulty}"
-                       HorizontalOptions="Start"
-                       TextColor="White"
-                       FontSize="Large"
+                    <Label Text="FIT KURACICE PRSIA "
+                       TextColor="{StaticResource MainText}"
+                       FontSize="15"
+                       Margin="10,0,0,0"
                        FontAttributes="Bold"
-                       Padding="30,5,0,0"/>
-                
-                <Label Text="Recipe"
-                       HorizontalOptions="Start"
-                       TextColor="White"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       Padding="30,5,0,0"/>
-                
-                <Label Text="First step:"
-                       HorizontalOptions="Start"
-                       TextColor="White"
-                       FontSize="Medium"
-                       FontAttributes="Italic"
-                       Padding="30,5,0,0"/>
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Center"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-            </StackLayout>
-        </ScrollView>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+
+                            <Label Text="Ingrediencie"
+                               FontSize="20"
+                               FontAttributes="Bold"                               
+                               TextColor="{StaticResource MainText}"
+                               Grid.Column="0"
+                               Grid.Row="0"
+                               Margin="15,10,0,0"/>
+                            <StackLayout>
+                                <Label Text="-  800 g kuracích pŕs 
+                                           
+                                   
+                                   
+                                         -  1 PL oleja 
+                                           
+                                   
+                                   
+                                          -  1 cibuľa
+                                           
+                                   
+                                   
+                                         -   400 ml kokosového mlieka  
+                                   
+                                           
+                                   
+                                         -   500 g brokolice
+                                   
+                                           
+                                   
+                                         -   2-3 PL sójovej omáčky
+                                           
+                                   
+                                   
+                                        -   30 g slnečnicových semienok
+                                           
+                                   
+                                   
+                                        -   1 ČL soli
+                                           
+                                   
+                                   
+                                        -   1/2 ČL mletého čierneho korenia
+                                           
+                                   
+                                   
+                                        -   čerstvá petržlenová vňať
+                                           
+                                   
+                                   
+                                       -    1/4 ČL kurkumy"
+                                 
+                                           
+                                        TextColor="White"
+                                        Grid.Column="0"
+                                        Grid.Row="0"
+                                        FontSize="15"
+                                        Margin="15,0,0,0"/>
+                            </StackLayout>
+
+                            <Label Text="STEP 1"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="20"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="V hrnci si na rozpálenom oleji zľahka opražíme nasekanú cibuľu."
+                               TextColor="White"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               FontSize="15"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="STEP 2"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="20"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="Následne pridáme na menšie kúsky nakrájané kuracie prsia a miešame 2 minúty."
+                               TextColor="White"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               FontSize="15"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="STEP 3"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="20"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="Mäso okoreníme, pridáme sójovú omáčku, kokosové mlieko, nadrobno nasekanú brokolicu a slnečnicové semienka."
+                               TextColor="White"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               FontSize="15"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="STEP 4"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="20"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="Mäso varíme za občasného miešania odokryté približne 15 minút."
+                               TextColor="White"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               FontSize="15"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="STEP 5"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="20"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="Nakoniec mäso osolíme, pridáme k nemu nasekanú petržlenovú vňať podľa chuti a varíme ešte 5 minút."
+                               TextColor="White"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               FontSize="15"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="STEP 6"
+                               TextColor="{StaticResource MainText}"
+                               FontSize="20"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               Margin="15,0,0,0"/>
+
+                            <Label Text="Hotové mäso podávame spolu s obľúbenou prílohou."
+                               TextColor="White"
+                               Grid.Column="0"
+                               Grid.Row="2"
+                               FontSize="15"
+                               Margin="15,0,0,0"/>
+
+                        </StackLayout>
+                    </Grid>
+
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
