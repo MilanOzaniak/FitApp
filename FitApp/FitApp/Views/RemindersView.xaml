@@ -39,9 +39,12 @@
                         <Grid Padding="10">
                             <Frame CornerRadius="15"
                                    HasShadow="True"
-                                   BorderColor="{StaticResource MainText}">
+                                   BackgroundColor="{StaticResource BackgroundColor}"
+                                   BorderColor="{StaticResource LowerText}">
                                 <StackLayout Orientation="Horizontal">
-                                    <StackLayout Orientation="Horizontal">
+                                    <StackLayout Orientation="Horizontal"
+                                                 HorizontalOptions="FillAndExpand"
+                                                 >
                                         <Grid>
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="*"/>
@@ -49,26 +52,37 @@
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
                                             </Grid.ColumnDefinitions>
-                                            
                                             <Label FontSize="20"
                                                    Text="{Binding Name}"
+                                                   TextColor="{StaticResource MainText}"
                                                    VerticalOptions="Center"
                                                    Grid.Column="0"
                                                    Grid.Row="0"/>
+                                            
 
-                                            <Label FontSize="30"
-                                                   Text="{Binding Roaster}"
-                                                   VerticalOptions="Center"
-                                                   FontAttributes="Bold"
-                                                   Grid.Column="0"
-                                                   Grid.Row="1"/>
+                                                <Label FontSize="40"
+                                                       Text="{Binding Time}"
+                                                       VerticalOptions="Center"
+                                                       FontAttributes="Bold"
+                                                       TextColor="White"
+                                                       Grid.Column="0"
+                                                       Grid.Row="1"/>
+                                            
+                                                <Label FontSize="15"
+                                                       Text="Everyday"
+                                                       TextColor="White"
+                                                       VerticalOptions="Center"
+                                                       HorizontalOptions="Start"
+                                                       Grid.Column="1"
+                                                       Grid.Row="1"/>
                                         </Grid>
                                         <ImageButton Source="DeleteIcon.png"
                                                      BackgroundColor="Transparent"
-                                                     WidthRequest="60"
+                                                     WidthRequest="50"
                                                      Command="{Binding Source={x:Reference RemindersPage}, Path=BindingContext.RemoveCommand}"
                                                      CommandParameter="{Binding .}"
-                                                     HorizontalOptions="End"
+                                                     HorizontalOptions="EndAndExpand"
+                                                     Margin="5,0,0,0"
                                                      VerticalOptions="Center"/>
                                     </StackLayout>
                                 </StackLayout>

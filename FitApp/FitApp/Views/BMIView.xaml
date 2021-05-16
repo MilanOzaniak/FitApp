@@ -25,7 +25,7 @@
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              CornerRadius="20"
-                             BorderWidth="1"
+                             BorderWidth="0.4"
                              BorderColor="{StaticResource MainText}"/>
 
                 <ImageButton Source="WomanGender.png"
@@ -34,8 +34,8 @@
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
                              CornerRadius="20"
-                             BorderWidth="1"
-                             BorderColor="Blue"/>
+                             BorderWidth="0.4"
+                             BorderColor="{StaticResource MainText}"/>
             </Grid>
 
             <StackLayout>

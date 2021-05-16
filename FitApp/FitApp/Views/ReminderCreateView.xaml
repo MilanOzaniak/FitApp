@@ -2,10 +2,53 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitApp.Views.ReminderCreateView"
+             xmlns:viewmodels="clr-namespace:FitApp.ViewModels"
+             x:Name="ReminderCreate"
+             BackgroundColor="{StaticResource BackgroundColor}"
              Title="CREATE REMINDER">
+    
+    <ContentPage.BindingContext>
+        <viewmodels:RemindersViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="AddIcon.png"
+                 Order="Primary"
+                 Priority="0"
+                 Command="{Binding SaveCommand}"/>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="Title"/>
+            
+            <Entry Text="{Binding ReminderName, Mode=TwoWay}"
+                   Placeholder="Reminder Name"
+                   PlaceholderColor="White"
+                   TextColor="White"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,0"
+                   FontSize="27"/>
+            
+            <Label Text="Alarm begin at"
+                   TextColor="{StaticResource LowerText}"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0"
+                   FontSize="17"/>
+            
+            <TimePicker Time="{Binding ReminderTime, Mode=TwoWay}"
+                        HorizontalOptions="Center"
+                        TextColor="White"
+                        Margin="0,-5,0,0"
+                        FontSize="50"/>
+
+            <Label Text="Repeat"
+                   TextColor="{StaticResource LowerText}"
+                   Margin="0,20,0,0"
+                   HorizontalOptions="Center"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

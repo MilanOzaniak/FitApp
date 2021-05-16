@@ -5,7 +5,10 @@
              xmlns:local="clr-namespace:FitApp.ViewModels"
              BackgroundColor="{StaticResource BackgroundColor}"
              Title="WORKOUTS">
-    
+
+    <ContentPage.BindingContext>
+        <local:WorkoutsViewModel/>
+    </ContentPage.BindingContext>
 
     <ContentPage.Content>
         <AbsoluteLayout>
@@ -29,7 +32,6 @@
                                 TextColor="{StaticResource MainText}"
                                 BackgroundColor="{StaticResource BackgroundColor}"
                                 BorderColor="{StaticResource MainText}"
-                                Command="{Binding StartWorkout1}"
                                 BorderWidth="1"
                                 Clicked="Button_Clicked"      
                         />
@@ -74,16 +76,17 @@
                                Margin="25,0,0,0"/>
 
                         <ImageButton Source="Armworkout.jpg"
+                                     Command="{Binding BeginnerArmsCommand}"
                                      CornerRadius="15"
-                                     Clicked="ImageButton_Clicked"
                                      Margin="15,0,15,15"/>
 
                         <ImageButton Source="Absworkout.jpg"
+                                     Command="{Binding BeginnerAbsCommand}"
                                      CornerRadius="15"
-                                     Clicked="ImageButton_Clicked_2"
                                      Margin="15,0,15,15"/>
 
                         <ImageButton Source="Legsworkout.jpg"
+                                     Command="{Binding BeginnerLegsCommand}"
                                      CornerRadius="15"
                                      Margin="15,0,15,15"/>
                     </StackLayout>
@@ -97,16 +100,18 @@
                                Margin="25,25,0,0"/>
 
                         <ImageButton Source="Armworkout.jpg"
+                                     Command="{Binding IntermediateArmsCommand}"
                                      CornerRadius="15"
                                      Margin="15,0,15,15"
-                                     Clicked="ImageButton_Clicked"
                              />
 
                         <ImageButton Source="Absworkout.jpg"
+                                     Command="{Binding IntermediateAbsCommand}"
                                      CornerRadius="15"
                                      Margin="15,0,15,15"
                              />
                         <ImageButton Source="Legsworkout.jpg"
+                                     Command="{Binding IntermediateLegsCommand}"
                                      CornerRadius="15"
                                      Margin="15,0,15,15"
                              />
@@ -121,16 +126,18 @@
                                Margin="25,25,0,0"/>
 
                         <ImageButton Source="Armworkout.jpg"
+                                     Command="{Binding AdvancedArmsCommand}"
                                      CornerRadius="15"
                                      Margin="15,0,15,15"
-                                     Clicked="ImageButton_Clicked"
                              />
 
                         <ImageButton Source="Absworkout.jpg"
+                                     Command="{Binding IntermediateAbsCommand}"
                                      CornerRadius="15"
                                      Margin="15,0,15,15"
                              />
                         <ImageButton Source="Legsworkout.jpg"
+                                     Command="{Binding IntermediateLegsCommand}"
                                      CornerRadius="15"
                                      Margin="15,0,15,15"
                              />

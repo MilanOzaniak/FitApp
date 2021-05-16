@@ -24,13 +24,13 @@ namespace FitApp.Services
 
             await db.CreateTableAsync<Reminders>();
         }
-        public static async Task AddReminder(string name, string roaster)
+        public static async Task AddReminder(string name, string time)
         {
             await Init();
             var reminder = new Reminders
             {
                 Name = name,
-                Roaster = roaster,
+                Time = time,
             };
            var id = await db.InsertAsync(reminder);
         }

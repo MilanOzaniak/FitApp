@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FitApp.ViewModels"
              x:Class="FitApp.Views.MealsView"
              BackgroundColor="{StaticResource BackgroundColor}"
              Title="MEALS">
+
+    <ContentPage.BindingContext>
+        <viewmodels:MealsViewModel/>
+    </ContentPage.BindingContext>
+    
+    
     <ContentPage.Content>
         <ScrollView x:Name="MealsScroll">
             <StackLayout>
@@ -14,27 +21,27 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <ImageButton Source="Weightgain.png"
+                    <ImageButton Source="Weightgain.jpg"
                                  Grid.Row="0"
-                                 Margin="5"
+                                 Margin="7"
                                  CornerRadius="15"
                                  Clicked="WeightGainScroll"/>
                     
-                    <ImageButton Source="Weightloss.png"
+                    <ImageButton Source="Weightloss.jpg"
                                  Grid.Row="1"
-                                 Margin="5"
+                                 Margin="7"
                                  CornerRadius="15"
                                  Clicked="WeightLossScroll"/>
 
-                    <ImageButton Source="Veganvegetarian.png"
+                    <ImageButton Source="Vegetarian.jpg"
                                  Grid.Row="2"
-                                 Margin="5"
+                                 Margin="7"
                                  CornerRadius="15"
                                  Clicked="VegetarianVeganScroll"/>
                     
-                    <ImageButton Source="Breakfast.png"
+                    <ImageButton Source="Breakfast.jpg"
                                  Grid.Row="3"
-                                 Margin="5"
+                                 Margin="7"
                                  CornerRadius="15"
                                  Clicked="BreakfastScroll"/>
 
@@ -67,7 +74,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
-                                     Clicked="ImageButton_Clicked"
+                                     Command="{Binding FirstMealCommand}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="Meal2title.jpg"
@@ -76,6 +83,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding SecondMealCommand}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="Meal2title.jpg"
@@ -84,6 +92,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     
                                      CornerRadius="15"/>
 
                         <ImageButton Source="Meal2title.jpg"

@@ -86,7 +86,7 @@
         <ShellContent Title="MEALS" Icon="MealsIcon.png" Route="MealsView" ContentTemplate="{DataTemplate local:MealsView}" />
         <ShellContent Title="REMINDERS" Icon="ReminderIcon.png" Route="RemindersView" ContentTemplate="{DataTemplate local:RemindersView}" />
         <ShellContent Title="BMI" Icon="BmiIcon" Route="BMIView" ContentTemplate="{DataTemplate local:BMIView}" />
-        <ShellContent Title="SETTINGS" Icon="SettingIcon.png" Route="SettingsView" ContentTemplate="{DataTemplate local:SettingsView}" />
+        <ShellContent Title="SETTINGS" Icon="SettingIcon.png" Route="SettingsView" ContentTemplate="{DataTemplate local:ReminderCreateView}" />
     </FlyoutItem>
     
 </Shell>

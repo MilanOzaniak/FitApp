@@ -16,16 +16,8 @@ namespace FitApp.Views
         public WorkoutsView()
         {
             InitializeComponent();
+            BindingContext = new WorkoutsViewModel();
         }
-        private async void ImageButton_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new WorkoutArmsView());
-        }
-        private async void ImageButton_Clicked_2(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new WorkoutsPlanView());
-        }
-
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await WorkoutsScroll.ScrollToAsync(1, Beginner.Y, true);

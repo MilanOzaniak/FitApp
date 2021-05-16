@@ -13,6 +13,7 @@ using Xamarin.Forms;
 using Command = MvvmHelpers.Commands.Command;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 
 namespace FitApp.ViewModels
 {
@@ -23,6 +24,36 @@ namespace FitApp.ViewModels
         public AsyncCommand RefreshCommand { get; }
         public AsyncCommand AddCommand { get; }
         public AsyncCommand<Reminders> RemoveCommand { get; }
+        public AsyncCommand SaveCommand { get; set; }
+
+        public INavigation Navigation { get; set; }
+
+        public string _reminderName;
+        public string ReminderName
+        {
+            get
+            {
+                return _reminderName;
+            }
+            set
+            {
+                _reminderName = value;
+                OnPropertyChanged();
+            }
+        }
+        public TimeSpan _reminderTime;
+        public TimeSpan ReminderTime
+        {
+            get
+            {
+                return _reminderTime;
+            }
+            set
+            {
+                _reminderTime = value;
+                OnPropertyChanged();
+            }
+        }
 
         bool _isBusy;
         public bool IsBusy
@@ -42,6 +73,8 @@ namespace FitApp.ViewModels
             RefreshCommand = new AsyncCommand(Refresh);
             AddCommand = new AsyncCommand(Add);
             RemoveCommand = new AsyncCommand<Reminders>(Remove);
+            SaveCommand = new AsyncCommand(Save);
+
             LoadData();
 
         }
@@ -52,11 +85,11 @@ namespace FitApp.ViewModels
         }
         async Task Add()
         {
-            var name = await App.Current.MainPage.DisplayPromptAsync("Name", "Name of my reminder");
-            var roaster = await App.Current.MainPage.DisplayPromptAsync("Roaster", "Roaster of reminder");
-            await ReminderService.AddReminder(name, roaster);
+
+            await Application.Current.MainPage.Navigation.PushAsync(new ReminderCreateView());
             await Refresh();
         }
+
 
         async Task Remove(Reminders reminders)
         {
@@ -72,6 +105,16 @@ namespace FitApp.ViewModels
             LoadData();
             IsBusy = false;
         }
+
+
+        public async Task Save()
+        {
+            string Time = ReminderTime.ToString(@"hh\:mm");
+            await ReminderService.AddReminder(ReminderName, Time);
+            await Application.Current.MainPage.Navigation.PopToRootAsync();
+        }
+
+
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

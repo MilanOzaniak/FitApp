@@ -2,15 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitApp.Views.Recipe1View"
+             xmlns:viewmodels="clr-namespace:FitApp.ViewModels"
              BackgroundColor="{StaticResource BackgroundColor}">
+
+    <ContentPage.BindingContext>
+        <viewmodels:RecipeViewModel/>
+    </ContentPage.BindingContext>
+    
+
     <ContentPage.Content>
         <AbsoluteLayout>
             <ScrollView AbsoluteLayout.LayoutFlags="All"
                         AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout>
-                    <Image Source="fitkuracieprsia.jpg"/>
+                    <Image Source="{Binding I1}"/>
 
-                    <Label Text="FIT KURACICE PRSIA "
+                    <Label Text="{Binding T1}"
                        TextColor="{StaticResource MainText}"
                        FontSize="15"
                        Margin="10,0,0,0"
@@ -34,65 +41,22 @@
                                Grid.Column="0"
                                Grid.Row="0"
                                Margin="15,10,0,0"/>
-                            <StackLayout>
-                                <Label Text="-  800 g kuracích pŕs 
-                                           
-                                   
-                                   
-                                         -  1 PL oleja 
-                                           
-                                   
-                                   
-                                          -  1 cibuľa
-                                           
-                                   
-                                   
-                                         -   400 ml kokosového mlieka  
-                                   
-                                           
-                                   
-                                         -   500 g brokolice
-                                   
-                                           
-                                   
-                                         -   2-3 PL sójovej omáčky
-                                           
-                                   
-                                   
-                                        -   30 g slnečnicových semienok
-                                           
-                                   
-                                   
-                                        -   1 ČL soli
-                                           
-                                   
-                                   
-                                        -   1/2 ČL mletého čierneho korenia
-                                           
-                                   
-                                   
-                                        -   čerstvá petržlenová vňať
-                                           
-                                   
-                                   
-                                       -    1/4 ČL kurkumy"
-                                 
-                                           
-                                        TextColor="White"
-                                        Grid.Column="0"
-                                        Grid.Row="0"
-                                        FontSize="15"
-                                        Margin="15,0,0,0"/>
-                            </StackLayout>
+                            
+                            <Label Text="{Binding Ing1}"
+                                   TextColor="White"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   FontSize="15"
+                                   Margin="15,0,0,0"/>
 
-                            <Label Text="STEP 1"
+                             <Label Text="STEP 1"
                                TextColor="{StaticResource MainText}"
                                FontSize="20"
                                Grid.Column="0"
                                Grid.Row="2"
                                Margin="15,0,0,0"/>
 
-                            <Label Text="V hrnci si na rozpálenom oleji zľahka opražíme nasekanú cibuľu."
+                            <Label Text="{Binding S1}"
                                TextColor="White"
                                Grid.Column="0"
                                Grid.Row="2"
@@ -106,7 +70,7 @@
                                Grid.Row="2"
                                Margin="15,0,0,0"/>
 
-                            <Label Text="Následne pridáme na menšie kúsky nakrájané kuracie prsia a miešame 2 minúty."
+                            <Label Text="{Binding S2}"
                                TextColor="White"
                                Grid.Column="0"
                                Grid.Row="2"
@@ -120,7 +84,7 @@
                                Grid.Row="2"
                                Margin="15,0,0,0"/>
 
-                            <Label Text="Mäso okoreníme, pridáme sójovú omáčku, kokosové mlieko, nadrobno nasekanú brokolicu a slnečnicové semienka."
+                            <Label Text="{Binding S3}"
                                TextColor="White"
                                Grid.Column="0"
                                Grid.Row="2"
@@ -134,7 +98,7 @@
                                Grid.Row="2"
                                Margin="15,0,0,0"/>
 
-                            <Label Text="Mäso varíme za občasného miešania odokryté približne 15 minút."
+                            <Label Text="{Binding S4}"
                                TextColor="White"
                                Grid.Column="0"
                                Grid.Row="2"
@@ -148,7 +112,7 @@
                                Grid.Row="2"
                                Margin="15,0,0,0"/>
 
-                            <Label Text="Nakoniec mäso osolíme, pridáme k nemu nasekanú petržlenovú vňať podľa chuti a varíme ešte 5 minút."
+                            <Label Text="{Binding S5}"
                                TextColor="White"
                                Grid.Column="0"
                                Grid.Row="2"
@@ -162,7 +126,7 @@
                                Grid.Row="2"
                                Margin="15,0,0,0"/>
 
-                            <Label Text="Hotové mäso podávame spolu s obľúbenou prílohou."
+                            <Label Text="{Binding S6}"
                                TextColor="White"
                                Grid.Column="0"
                                Grid.Row="2"
