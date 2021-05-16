@@ -1,3 +1,4 @@
+![Screenshot_1620988321](https://user-images.githubusercontent.com/71782252/118396970-3c4a2e00-b652-11eb-9a0e-3f2f852286c3.png)
 <h1 align = "center"> FitApp </h1>
 
 ## ABOUT
