@@ -30,7 +30,11 @@ Updated Workouts UI
 ```
 Added BMI calculator
 ```
-
+>16.5. 2021
+```
+Added Workout plans
+Added Reminder function
+```
 
 
 
