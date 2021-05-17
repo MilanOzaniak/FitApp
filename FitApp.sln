@@ -7,16 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitApp.Android", "FitApp\Fi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitApp", "FitApp\FitApp\FitApp.csproj", "{B87BF0EE-0691-4200-875A-475FA612A144}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{C4A7B888-C75D-416C-A7DB-7D1D0137AF95}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\MealsPage.png = ..\..\..\Desktop\MealsPage.png
-		..\..\..\Desktop\RecipePage.png = ..\..\..\Desktop\RecipePage.png
-		..\..\..\Desktop\RemindersCreatePage.png = ..\..\..\Desktop\RemindersCreatePage.png
-		..\..\..\Desktop\RemindersPage.png = ..\..\..\Desktop\RemindersPage.png
-		..\..\..\Desktop\WorkoutPage.png = ..\..\..\Desktop\WorkoutPage.png
-		..\..\..\Desktop\WorkoutPlanPage.png = ..\..\..\Desktop\WorkoutPlanPage.png
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
