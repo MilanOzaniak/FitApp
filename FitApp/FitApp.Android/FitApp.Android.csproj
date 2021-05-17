@@ -183,10 +183,10 @@
     <AndroidResource Include="Resources\Images\RemindersPage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Images\WorkoutPage.png" />
+    <AndroidResource Include="Resources\Images\WorkoutPlanPage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Images\WorkoutPlanPage.png" />
+    <AndroidResource Include="Resources\Images\WorkoutPage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
