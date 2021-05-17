@@ -2,8 +2,11 @@
 
 ## ABOUT
 FitApp is an application for weight loss, burning calories, gaining muscle and strength. Application offers training sessions focused on the abdominal muscles, legs, shoulders, arms, chest and whole body. You can choose from our recommended meals, whether you want to gain weight or lose weight. Water reminder will help you to stay hydrated while Training reminder will help you to not forget your training.
+<p allign="center">
+## OVERVIEW
+ </p>
 
-Meals Page
+
 ![Workouts](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/WorkoutPage.png)
 ![Workout Plans](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/WorkoutPage.png)
 ![Meals](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/MealsPage.png)
