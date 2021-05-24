@@ -10,7 +10,7 @@ FitApp is an application for weight loss, burning calories, gaining muscle and s
 [![Workout-Page.png](https://i.postimg.cc/W37LSfrV/Workout-Page.png)](https://postimg.cc/sQ1NgmwH)
 [![Workout-Plan-Page.png](https://i.postimg.cc/FHS6DB56/Workout-Plan-Page.png)](https://postimg.cc/TKRQPQPj)
 [![Meals-Page.png](https://i.postimg.cc/zBGRX4q2/Meals-Page.png)](https://postimg.cc/nsNL3Rjq)
-[![Meals-Preview-Page.png](https://i.postimg.cc/L6DkRkks/Meals-Preview-Page.png)](https://postimg.cc/VdS0WCVy)
+[![Meals-Preview-Page.png](https://i.postimg.cc/Dz2t0PHY/Meals-Preview-Page.png)](https://postimg.cc/NKzNPmg1)
 [![Recipe-Page.png](https://i.postimg.cc/J4kHnNW8/Recipe-Page.png)](https://postimg.cc/mtTgpFDp)
 [![Reminders-Page.png](https://i.postimg.cc/d1ZZyrTG/Reminders-Page.png)](https://postimg.cc/5Y1tcHgt)
 [![Reminders-Create-Page.png](https://i.postimg.cc/Y9Pj29nj/Reminders-Create-Page.png)](https://postimg.cc/vgWG3Qdd)
