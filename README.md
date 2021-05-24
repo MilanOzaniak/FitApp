@@ -17,11 +17,10 @@ FitApp is an application for weight loss, burning calories, gaining muscle and s
 
 ## FEATURES
 ```
-Workout plans
-Featured meals
-Water and training reminder
+Workouts (Shoulders, Arms, Chest, Abs, legs) for Beginners, Intermediate and Advanced.
+Meals (Weight gain, Weight loss, Vegetarian/Vegan and Breakfast)
+Training reminder (Choose when you want to train)
 BMI calculator
-Weight loss/gain graph
 ```
 ## RELEASES
 > 14.2. 2021
@@ -46,6 +45,12 @@ Added BMI calculator
 ```
 Added Workout plans
 Added Reminder function
+```
+>24.5. 2021
+```
+Added Meals Pictures
+More recipes
+New icons
 ```
 
 
