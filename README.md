@@ -9,7 +9,7 @@ FitApp is an application for weight loss, burning calories, gaining muscle and s
 
 ![Workouts](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/WorkoutPage.png)
 ![Workout Plans](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/WorkoutPlanPage.png)
-![Meals](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/MealsPage.png)
+![Meals](https://postimg.cc/nsNL3Rjq)
 ![Recipe](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/RecipePage.png)
 ![Reminders](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/RemindersPage.png)
 ![RemindersCreate](https://github.com/MilanOzaniak/FitApp/blob/master/FitApp/FitApp.Android/Resources/Images/RemindersCreatePage.png)
