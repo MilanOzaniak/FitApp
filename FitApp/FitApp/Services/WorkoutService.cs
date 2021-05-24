@@ -8,7 +8,5 @@ namespace FitApp.Services
     {
         public string W1 { get; set; }
         public string T1 { get; set; }
-
-       
     }
 }

@@ -68,7 +68,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wg1.jpg"
                                      Grid.Column="0"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -77,7 +77,7 @@
                                      Command="{Binding FirstMealCommand}"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wg2.jpg"
                                      Grid.Column="1"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -86,7 +86,7 @@
                                      Command="{Binding SecondMealCommand}"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wg3.jpg"
                                      Grid.Column="0"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -95,7 +95,7 @@
                                      
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wg4.jpg"
                                      Grid.Column="1"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -103,7 +103,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wg5.jpg"
                                      Grid.Column="0"
                                      Grid.Row="2"
                                      VerticalOptions="Center"
@@ -111,7 +111,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wg6.jpg"
                                      Grid.Column="1"
                                      Grid.Row="2"
                                      VerticalOptions="Center"
@@ -143,7 +143,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wl1.jpg"
                                      Grid.Column="0"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -151,7 +151,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wl2.jpg"
                                      Grid.Column="1"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -159,7 +159,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
                         
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wl3.jpg"
                                      Grid.Column="0"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -167,7 +167,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wl4.jpg"
                                      Grid.Column="1"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -175,7 +175,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
                         
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wl5.jpg"
                                      Grid.Column="0"
                                      Grid.Row="2"
                                      VerticalOptions="Center"
@@ -183,7 +183,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="wl6.jpg"
                                      Grid.Column="1"
                                      Grid.Row="2"
                                      VerticalOptions="Center"
@@ -215,7 +215,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="vegan1.jpg"
                                      Grid.Column="0"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -223,7 +223,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="vegan2.jpg"
                                      Grid.Column="1"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -231,7 +231,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="vegan3.jpg"
                                      Grid.Column="0"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -239,7 +239,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="vegan4.jpg"
                                      Grid.Column="1"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -247,7 +247,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="vegan5.jpg"
                                      Grid.Column="0"
                                      Grid.Row="2"
                                      VerticalOptions="Center"
@@ -255,7 +255,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="vegan6.jpg"
                                      Grid.Column="1"
                                      Grid.Row="2"
                                      VerticalOptions="Center"
@@ -287,7 +287,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="br1.jpg"
                                      Grid.Column="0"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -295,7 +295,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="br2.jpg"
                                      Grid.Column="1"
                                      Grid.Row="0"
                                      VerticalOptions="Center"
@@ -303,7 +303,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="br3.jpg"
                                      Grid.Column="0"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -311,7 +311,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="br4.jpg"
                                      Grid.Column="1"
                                      Grid.Row="1"
                                      VerticalOptions="Center"
@@ -319,7 +319,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="br5.jpg"
                                      Grid.Column="0"
                                      Grid.Row="2"
                                      VerticalOptions="Center"
@@ -327,7 +327,7 @@
                                      Margin="10,0,10,0"
                                      CornerRadius="15"/>
 
-                        <ImageButton Source="Meal2title.jpg"
+                        <ImageButton Source="br6.jpg"
                                      Grid.Column="1"
                                      Grid.Row="2"
                                      VerticalOptions="Center"

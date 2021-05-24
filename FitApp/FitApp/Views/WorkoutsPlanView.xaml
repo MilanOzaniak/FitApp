@@ -16,7 +16,7 @@
                 <StackLayout>
                     <Image Source="Armworkout.jpg"/>
 
-                    <Label Text="15 MINUTES ° 14 WORKOUTS"
+                    <Label Text="more"
                        TextColor="Blue"
                        FontSize="15"
                        Margin="10,0,0,0"

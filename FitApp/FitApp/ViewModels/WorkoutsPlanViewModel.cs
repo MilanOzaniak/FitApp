@@ -52,6 +52,20 @@ namespace FitApp.ViewModels
             }
         }
 
+        public string _et;
+        public string ET
+        {
+            get
+            {
+                return _et;
+            }
+            set
+            {
+                _et = value;
+                OnPropertyChanged();
+            }
+        }
+
         public WorkoutsPlanViewModel()
         {
             workoutService = App.ws;
