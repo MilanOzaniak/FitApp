@@ -8,72 +8,118 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                
+
                 <Label Text="CHECKOUT OUR FEATURED MEALS AND WORKOUTS"
                        TextColor="White"
                        FontAttributes="Bold"
                        FontSize="30"
                        HorizontalTextAlignment="Center"/>
 
-                <Grid ColumnSpacing="0"
-                      RowSpacing="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-
-
-                </Grid>
                 <Label Text="MEALS"
                        TextColor="SkyBlue"
                        HorizontalTextAlignment="Start"
-                       Margin="15,0,0,0"
+                       Margin="12,10,0,0"
                        FontSize="15"
                        FontAttributes="Bold"/>
 
-                <Label Text="PASTA WITH CHEESE"
-                       Margin="30,0,0,0"
+                <Label Text="Weight Gain"
+                       TextColor="White"
                        HorizontalTextAlignment="Start"
-                       TextColor="White"
-                       FontSize="15"
+                       Margin="25,10,0,10"
                        FontAttributes="Bold"
-                       />
+                       FontSize="18"/>
 
-                <ImageButton Source="Meal1cropped.jpg"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"
-                             Margin="15,0,15,15"
-                             Command="{Binding Recipe}"
-                             CornerRadius="15"
-                             Clicked="ImageButton_Clicked"/>
-                
-                <Label Text="Meal2"
-                       HorizontalTextAlignment="Center"
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+
+                        <ImageButton Source="wg1.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="15,0,10,0"
+                                     WidthRequest="180"
+                                     CornerRadius="15"/>
+                        
+                        <ImageButton Source="wg2.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     WidthRequest="180"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="wg3.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     WidthRequest="180"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+                        
+                        <ImageButton Source="wg4.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     WidthRequest="180"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="wg5.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     WidthRequest="180"
+                                     Margin="10,0,10,0"
+                                     CornerRadius="15"/>
+                    </StackLayout>
+                </ScrollView>
+
+                <Label Text="Weight Loss"
                        TextColor="White"
-                       FontSize="Medium"
-                       FontAttributes="Bold"/>
+                       HorizontalTextAlignment="Start"
+                       Margin="25,10,0,10"
+                       FontAttributes="Bold"
+                       FontSize="18"/>
 
-                <ImageButton Source="Meal2cropped.jpg"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"
-                             Margin="15,0,15,15"
-                             CornerRadius="15"/>
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        
+                        <ImageButton Source="wl1.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="15,0,10,0"
+                                     WidthRequest="180"
+                                     CornerRadius="15"/>
 
-                <Label Text="Meal3"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"
-                       FontSize="Medium"
-                       FontAttributes="Bold"/>
+                        <ImageButton Source="wl2.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     WidthRequest="180"
+                                     CornerRadius="15"/>
 
-                <ImageButton Source="Meal1cropped.jpg"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"
-                             Margin="15,0,15,15"
-                             CornerRadius="15"/>
-                
+                        <ImageButton Source="wl3.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     WidthRequest="180"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="wl4.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     WidthRequest="180"
+                                     CornerRadius="15"/>
+
+                        <ImageButton Source="wl5.jpg"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     Margin="10,0,10,0"
+                                     WidthRequest="180"
+                                     CornerRadius="15"/>
+                    </StackLayout>
+                </ScrollView>
+
                 <Label Text="WORKOUTS"
                        TextColor="SkyBlue"
                        HorizontalTextAlignment="Start"
-                       Margin="15,0,0,0"
+                       Margin="12,10,0,0"
                        FontSize="15"
                        FontAttributes="Bold"/>
 
