@@ -57,6 +57,11 @@ New icons
 ```
 Updated Main Page (Recommended page)
 ```
+>30.5. 2021
+```
+Updated BMI page
+Updated ReminderCreate page
+```
 
 
 
