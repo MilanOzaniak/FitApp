@@ -111,9 +111,14 @@ namespace FitApp.ViewModels
         {
             string Time = ReminderTime.ToString(@"hh\:mm");
             await ReminderService.AddReminder(ReminderName, Time);
-            await Application.Current.MainPage.Navigation.PopToRootAsync();
+            await BackPage();
+            await Refresh();
         }
 
+        public async Task BackPage()
+        {
+            await Application.Current.MainPage.Navigation.PopToRootAsync();
+        }
 
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)

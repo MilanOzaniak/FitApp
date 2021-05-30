@@ -13,37 +13,31 @@
     <ContentPage.Content>
         
         <StackLayout>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <ImageButton Source="ManGender.png"
-                             Grid.Column="0"
-                             Margin="5"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"
-                             CornerRadius="20"
-                             BorderWidth="0.4"
-                             BorderColor="{StaticResource MainText}"/>
-
-                <ImageButton Source="WomanGender.png"
-                             Grid.Column="1"
-                             Margin="5"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"
-                             CornerRadius="20"
-                             BorderWidth="0.4"
-                             BorderColor="{StaticResource MainText}"/>
-            </Grid>
-
             <StackLayout>
+                <StackLayout Orientation="Horizontal">
+
+                    <ImageButton Source="ManGender.png"
+                             Grid.Column="0"
+                             Margin="30,0,45,0"
+                                 HeightRequest="150"
+                             CornerRadius="20"
+                             BorderWidth="0.4"
+                             BorderColor="{StaticResource MainText}"/>
+
+                    <ImageButton Source="WomanGender.png"
+                             Grid.Column="1"
+                             Margin="0"
+                                 HeightRequest="150"
+                             CornerRadius="20"
+                             BorderWidth="0.4"
+                             BorderColor="{StaticResource MainText}"/>
+
+                </StackLayout>
 
                 <Frame BackgroundColor="#FF222323"
                        CornerRadius="15"
                        BorderColor="{StaticResource MainText}"
-                       Margin="20,20,20,0">
+                       Margin="30,5,30,0">
                     <StackLayout>
                         <Label Text="HEIGHT"
                                TextColor="{StaticResource MainText}"
@@ -71,7 +65,7 @@
                 <Frame BackgroundColor="#FF222323"
                        CornerRadius="15"
                        BorderColor="{StaticResource MainText}"
-                       Margin="20,20,20,0">
+                       Margin="30,5,30,0">
 
                     <StackLayout>
 
@@ -101,14 +95,14 @@
                 </Frame>
 
                 <Button Text="CALCULATE"
-                        Margin="20"
+                        Margin="30,20,30,20"
                         HeightRequest="50"
                         BackgroundColor="{StaticResource MainText}"
                         CornerRadius="15"
                         Command="{Binding CalculateBMI}"/>
 
                 <Label Text="YOUR BMI IS"
-                       Margin="-5"
+                       Margin="-5,-10,-5,-5"
                        FontSize="22"
                        TextColor="{StaticResource MainText}"
                        HorizontalOptions="Center"/>
