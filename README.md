@@ -52,7 +52,10 @@ Added Meals Pictures
 More recipes
 New icons
 ```
-
+>29.5. 2021
+```
+Updated Main Page (Recommended page)
+```
 
 
 
