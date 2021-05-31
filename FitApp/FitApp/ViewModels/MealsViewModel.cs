@@ -27,6 +27,22 @@ namespace FitApp.ViewModels
         public AsyncCommand Br5Command { get; set; }
         public AsyncCommand Br6Command { get; set; }
 
+        //  Vegan
+        public AsyncCommand Vegan1Command { get; set; }
+        public AsyncCommand Vegan2Command { get; set; }
+        public AsyncCommand Vegan3Command { get; set; }
+        public AsyncCommand Vegan4Command { get; set; }
+        public AsyncCommand Vegan5Command { get; set; }
+        public AsyncCommand Vegan6Command { get; set; }
+
+        //  WeightLoss
+        public AsyncCommand Wl1Command { get; set; }
+        public AsyncCommand Wl2Command { get; set; }
+        public AsyncCommand Wl3Command { get; set; }
+        public AsyncCommand Wl4Command { get; set; }
+        public AsyncCommand Wl5Command { get; set; }
+        public AsyncCommand Wl6Command { get; set; }
+
         public MealsViewModel()
         {
             Wg1Command = new AsyncCommand(Wg1);
@@ -42,6 +58,20 @@ namespace FitApp.ViewModels
             Br4Command = new AsyncCommand(Br4);
             Br5Command = new AsyncCommand(Br5);
             Br6Command = new AsyncCommand(Br6);
+
+            Vegan1Command = new AsyncCommand(Vegan1);
+            Vegan2Command = new AsyncCommand(Vegan2);
+            Vegan3Command = new AsyncCommand(Vegan3);
+            Vegan4Command = new AsyncCommand(Vegan4);
+            Vegan5Command = new AsyncCommand(Vegan5);
+            //Vegan6Command = new AsyncCommand(Vegan6);
+
+            Wl1Command = new AsyncCommand(Wl1);
+            Wl2Command = new AsyncCommand(Wl2);
+            Wl3Command = new AsyncCommand(Wl3);
+            Wl4Command = new AsyncCommand(Wl4);
+            Wl5Command = new AsyncCommand(Wl5);
+            Wl6Command = new AsyncCommand(Wl6);
         }
 
         //  Weightgain
@@ -155,6 +185,90 @@ namespace FitApp.ViewModels
                 "-  4 large eggs " + "\n" + "-  100 g baby spinach" + "\n" + "- 400 g chopped, peeled tomatoes (of tin)" + "\n" + "- 1 onion" + "\n" + "- 1 TB of olive oil" + "\n" +
                 "-  2 garlic cloves" + "\n" + "- 1/2 TB salt" + "\n" + "-  1/4 TB ground pepper" + "\n" + "-  1/4 TB of ground black pepper" + "\n" +
                 "-  a pinch of chilli pepper" + "\n" + "-  pinch of ground cumin" + "-  handful of parsley" + "\n", "1", "2", "3", "4", "5", "6");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+
+        async Task Vegan1()
+        {
+            App.ms.SetRecipe("", "Beetroot soup with chilli and sprouts  ",
+                "-  300 g cooked beetroot (vacuum packed)  " + "\n" + "-  300 g carrots" + "\n" + "-  500 ml boiling water" + "\n" + "-  200 ml coconut milk (light)  " + "\n" + "-  1 tbsp olive oil " + "\n" +
+                "-  1 onion " + "\n" + "-  2 cloves garlic " + "\n" + "-  crushed chili peppers (to taste) " + "\n" + "-  1/2 tb salt " + "\n" +
+                "-  ground black pepper (to taste) " + "\n" + "-  thyme (to taste) ", "In a saucepan, fry the chopped onions and garlic in the hot oil. ", "Add the chilli, thyme, ground black pepper, chopped beetroot, finely chopped carrots and roast for a minute. ", "Pour the vegetables with boiling water and cook them for 15-20 minutes, until the carrots soften. ", "Then blend the soup until smooth with a rod blender (or a blender). ", "Then add coconut milk, salt to the soup, stir it and let it boil. ", "Serve the finished soup sprinkled with sprouts. ");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+        async Task Vegan2()
+        {
+            App.ms.SetRecipe("", "Tofu on orange sauce (vegan) ",
+                "-  300 g bio tofu (no flavor)   " + "\n" + "-  3 tsad cornstarch " + "\n" + "-  200 ml orange juice" + "\n" + "-  60 ml soy sauce   " + "\n" + "-  2 PL maple syrup   " + "\n" +
+                "-  2 tss of rice vinegar (you can skip) " + "\n" + "-  4 garlic cloves " + "\n" + "-  1 TB chilli sauce (e.g. Sriracha)  " + "\n" + "-  1/4 TB of ground ginger " + "\n" +
+                "-  2 pl of water " + "\n" + "-  2 tss cornstarch  ", "Preheat the oven to 200 degrees. Line the baking tray with baking paper. Use paper towels to get rid of tofu as much water as possible. ", " Then cut it into 2 cm cubes, which we wrap with 3 tablespoons of cornstarch. Place the prepared tofu on a baking tray and bake for 20-25 minutes, in the middle of baking the tofu.  ", " Meanwhile, in a deep frying pan, mix all the ingredients for the sauce and stir them with a whisk. When the tofu is baked, we start heating the sauce pan over a medium heat until it starts to boil. Stir occasionally.  ",
+                "Add the tofu to the boiling sauce and mix well to wrap each piece of tofu. Once the desired consistency has been reached, we remove the pan from the stove. If you like a thinner sauce, you can add 1-2 tablespoons of water. ", "Then add coconut milk, salt to the soup, stir it and let it boil. ", "Serve with jasmine rice or other sided and garnish with sesame seeds and green onions. ");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+        async Task Vegan3()
+        {
+            App.ms.SetRecipe("", "Healthy plum-apple crumble  ",
+                "-  400 g fresh plums   " + "\n" + "-  2 smaller apples " + "\n" + "-  2 tbsp lemon juice" + "\n" + "-  2 tss of softened coconut oil (or butter)   " + "\n" + "-   60 g wholemeal/seasoned flour (possibly almond) " + "\n" +
+                "-  1/2 TB baking powder " + "\n" + "-  1-2 PL of xylitol (or a little 1000)  " + "\n" + "-  10 g coconut " + "\n" + "- " + "\n" +
+                "-  ground black pepper (to taste) " + "\n" + "-  thyme (to taste) ", " Clean the fruit and cut it into smaller pieces. ", "Place it at the bottom of two smaller baking bowls or one large bowl. ", "Drizzle the fruit with lemon juice. ", " In a bowl, stir in the softened coconut oil or butter, any flour, sweetener and baking powder by hand. ", "Crush the formed solid dough into the prepared fruit. ", "Sprinkle crumble with grated coconut and bake it for about 30 minutes at 190 degrees until golden brown. ");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+    async Task Vegan4()
+    {
+        App.ms.SetRecipe("", "Quick nut pasta from 4 ingredients (chickpeas, gluten-free) ",
+            "-  250 g chickpea pasta (fussili) " + "\n" + "- 100 g walnuts " + "\n" + "-  2 TSAs (30 g) of butter or oil " + "\n" + "-  2 TB (40 g) honey or maple syrup  ",
+            " In a saucepan we let the water boil.", "Add chickpea pasta to the water and cook them until soft for about 8 minutes. ", "Blend the nuts finely in a blender or cleaver. ", "Mix the pasta and mix with the walnuts, butter and honey. ", "I recommend serving pasta immediately while it is soft and warm. ", "ENJOY !");
+        await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+    }
+    async Task Vegan5()
+    {
+        App.ms.SetRecipe("", "Tofu on orange sauce (vegan)  ", "-   300 g bio tofu (no flavor)   " + "\n" + "-  3 tsad cornstarch " + "\n" + "-  200 ml orange juice " + "\n" + "-  60 ml soy sauce   " + "\n" + "-   2 PL maple syrupÂ  " + "\n" +
+            "- 2 tss of rice vinegar (you can skip)  " + "\n" + "-   4 garlic cloves  " + "\n" + "-  11 TB chilli sauce (e.g. Sriracha) " + "\n" + "-  1/4 TB of ground ginger " + "\n" +
+            "-  2 pl of water  " + "\n" + "-  2 tss cornstarch ", " Preheat the oven to 200 degrees. Line the baking tray with baking paper. Use paper towels to get rid of tofu as much water as possible.", "Then cut it into 2 cm cubes, which we wrap with 3 tablespoons of cornstarch. Place the prepared tofu on a baking tray and bake for 20-25 minutes, in the middle of baking the tofu. ",
+            " Meanwhile, in a deep frying pan, mix all the ingredients for the sauce and stir them with a whisk. When the tofu is baked, we start heating the sauce pan over a medium heat until it starts to boil. Stir occasionally.", "Add the tofu to the boiling sauce and mix well to wrap each piece of tofu. Once the desired consistency has been reached, we remove the pan from the stove. If you like a thinner sauce, you can add 1-2 tablespoons of water.", " Serve with jasmine rice or other sided and garnish with sesame seeds and green onions.", "ENJOY!");
+        await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+    }
+
+        async Task Wl1()
+        {
+            App.ms.SetRecipe("", "Low-carb chicken breast with carrots and cauliflower ", "-   300 g bio tofu (no flavor)   " + "\n" + "-  3 tsad cornstarch " + "\n" + "-  200 ml orange juice " + "\n" + "-  60 ml soy sauce   " + "\n" + "-   2 PL maple syrup  " + "\n" +
+                "- 700g chicken breast  " + "\n" + "-   1 onion  " + "\n" + "-  200g carrots  " + "\n" + "-  2 tbsp lemon juice  " + "\n" +
+                "-  1 tbs p.m. garlic pepper   " + "\n" + "-  1 TB of ground red pepper " + "\n" +"-  1 TB salt  " + "\n" + "-  a pinch of turmeric " + "\n" + "-  1 larger cauliflower   " + "\n" + "-   2 tss water ", "In a saucepan, lightly fry the finely chopped onions in a saucepan and then add the chopped chicken breast to the cubes. ", "Mix the contents of the saucepan thoroughly, pour a little water, cover and sie for 20 minutes. ", " Finally, add the spices, salt, lemon juice and grated carrots. ", "We cook everything together for another 5 minutes and wean it off the heat. ", " In the meantime, we disassemble the cauliflower into roses and mix it in parts into  a blender. If you are interested, we can cut the cauliflower into small pieces with the help of a knife, but we will achieve a more subtle result by using a blender.Put the chopped cauliflower in a deeper pan, add 2 tablespoons of water, salt, season and cook it for about 10 minutes, stirring occasionally, until golden in colour begins to catch. ", "Then we wean the cauliflower from the heat and serve together with the finished meat. ");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+        async Task Wl2()
+        {
+            App.ms.SetRecipe("", "Fit chicken breast on spinach  ", "-   500g chicken breast    " + "\n" + "-   300 g bio tofu (no flavor)   " + "\n" + "- 500g frozen spinach  " + "\n" + "-  1 onion  " + "\n" + "-  3 tsp soy sauce    " + "\n" + "-   3 garlic cloves  " + "\n" +
+                "- 1 TB salt1 TB turmeric   " + "\n" + "-   1 TB parsley  " + "\n" + "-  grated mozzarella  " + "\n" + "Let the spinach freeze. ", "In a larger saucepan, lightly fry the finely chopped onions on melted coconut oil. ", " Add to the cubes chopped chicken breast, stir, salt, season, pour with 150ml water and sift for about 20 minutes, stirring occasionally. ", "When the meat slowly crumbles, add the soy sauce, pressed garlic cloves and def frozen spinach. ", " Stir the mixture until we remove it from excess water.Finally, we can also add corn and grated mozzarella. ", "We serve the finished food warm along with rice, couscus, potatoes or separately. ", "");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+
+        async Task Wl3()
+        {
+            App.ms.SetRecipe("", "Fit cauliflower cake   ", "-   1 cauliflower    " + "\n" + "- 4 eggs  " + "\n" + "- 3 handfuls of spinach   " + "\n" + "-  40g dried tomatoes  " + "\n" + "-  1/2 TB salt   " + "\n" +
+                "- 1/2 TB of ground black pepper    " + "\n" + "-  1 tbs p.m. garlic pepper   ", "We disassemble the cauliflower into small roses and blend it together with the eggs, cottage cheese, pepper, sea salt and spinach as smoothly as possible in the blender. ", "Finally, we add dried tomatoes to the dough, chopped finely. ", "Pour the dough into a silicone or baking paper lined baking dish and bake for about 60 minutes on 180 degrees until the dough has solidtened and melted. ", "Allow the cake to cool for at least 10 minutes before chopping. ", " ENJOY!", "6");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+
+        async Task Wl4()
+        {
+            App.ms.SetRecipe("", "Fit Thai roasted rice", "-   300 g bio tofu (no flavor)   " + "\n" + "-  3 tsad cornstarch " + "\n" + "-  200 ml orange juice " + "\n" + "-  60 ml soy sauce   " + "\n" + "-   2 PL maple syrup  " + "\n" +
+                "- 2 tss of rice vinegar (you can skip)  " + "\n" + "-   4 garlic cloves  " + "\n" + "-  11 TB chilli sauce (e.g. Sriracha) " + "\n" + "-  2 garlic cloves  ", "In a bowl, mix together the soy sauce, lime juice, pressed garlic cloves, peanuts, chopped spring onions and finely chopped coriander. ", "Wash, clean and disassemble cauliflower into roses. Mix the pieces of cauliflower in parts in a blender into fine. Alternatively, we'll chop it with a knife. ", "In a frying pan, heat the coconut oil, on which we fry the cauliflower rice for 3 minutes. ", "V strede panvice si urobíme medzeru, do ktorej vylejeme rozmiešané vajíčka, necháme ich na mieste zhruba 30 sekúnd a následne ich rozmiešame s karfiolom. ", "Keď sú vajíčka hotové, na panvicu vylejeme pripravenú omáčku a „ryžovú“ zmes popražíme ešte 3 minúty, dokým karfiól úplne nezmäkne. ", "Jedlo podávame teplé a pred servírovaním ho môžeme posypať nadrobenými orechami a poliať limetkovou šťavou. ");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+
+        async Task Wl5()
+        {
+            App.ms.SetRecipe("", "Dietary cauliflower with bryndza   ", "-   1 cauliflower    " + "\n" + "-  2 eggs  " + "\n" + "-  4 tbsping fresh coriander  " + "\n" + "-  50 g peanuts (or cashew nuts)    " + "\n" + "-   3 tsp soy sauce   " + "\n" +
+                "- juice of 1⁄2 limes  " + "\n" + "-   Spring onions   " + "\n" + "-  1 TB coconut oil   " + "\n" + "-  1/4 TB of ground ginger " + "\n" +
+                "-  2 pl of water  " + "\n" + "-  2 tss cornstarch ", "In a larger saucepan we let the water boil. ", "We clean the cauliflower, wash and disassemble into roses.  ", "We put the cauliflower roses boil over steam for 10 minutes, cook them until soft. ", "Then we remove them from the pot and cut them into small gnocchi. ", "Put the cauliflower gnocchi in a warm saucepan without water, where we mix them with bryndza and cottage cheese. If the bryndza does not dissolve, we can heat everything together on a weak flame.In a hot frying pan, fry the fine cubes of chopped ham into a golden brown. If necessary, spray the pan in front with a little oil. ", "Serve cauliflower gnocchi with toasted ham and we can also add chives. ");
+            await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
+        }
+
+        async Task Wl6()
+        {
+            App.ms.SetRecipe("", "Baked aubergine wheels   ", "-   1 medium aubergine    " + "\n" + "-  50 g tomato puree (or purée)  " + "\n" + "- 40g grated mozzarella (or other cheese)   " + "\n" + "-  100 g quality ham   " + "\n" + "- fresh basil (to taste)   " + "\n" +
+                "- cherry tomatoes (to taste)   " + "\n" + "-  sea salt  " + "\n" + "-  garlic spices  ", "Wash the aubergine and cut it into wheels (not thick or too thin). ", "Place the chopped eggplant on a baking tray lined with baking paper.  ", " Lightly salt the aubergine wheels and bake for 15 minutes at 210 degrees. ", "Then remove the eggplant from the oven and rub each wheel with tomato puree (possibly tomato purée diluted with water), put pieces of ham on them, sprinkle with cheese and finally decorate with cherry tomatoes and basil. We can also mix salt and garlic pepper into the tomato puree. ", " Bake the eggplant for 5-10 minutes at 250 degrees until the cheese starts to catch a golden colour. ", "ENJOY!");
             await Application.Current.MainPage.Navigation.PushAsync(new Recipe1View());
         }
 

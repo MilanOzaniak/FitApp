@@ -152,6 +152,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wl1Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wl2.jpg"
@@ -160,6 +161,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wl2Command}"
                                      CornerRadius="15"/>
                         
                         <ImageButton Source="wl3.jpg"
@@ -168,6 +170,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wl3Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wl4.jpg"
@@ -176,6 +179,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wl4Command}"
                                      CornerRadius="15"/>
                         
                         <ImageButton Source="wl5.jpg"
@@ -184,6 +188,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wl5Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wl6.jpg"
@@ -192,6 +197,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wl6Command}"
                                      CornerRadius="15"/>
                         
                     </Grid>
@@ -224,6 +230,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Vegan1Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="vegan2.jpg"
@@ -232,6 +239,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Vegan2Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="vegan3.jpg"
@@ -240,6 +248,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Vegan3Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="vegan4.jpg"
@@ -248,6 +257,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Vegan4Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="vegan5.jpg"
@@ -256,6 +266,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Vegan5Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="vegan6.jpg"
@@ -264,6 +275,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Vegan6Command}"
                                      CornerRadius="15"/>
 
 
