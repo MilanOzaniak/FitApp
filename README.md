@@ -13,7 +13,8 @@ FitApp is an application for weight loss, burning calories, gaining muscle and s
 [![Meals-Preview-Page.png](https://i.postimg.cc/Dz2t0PHY/Meals-Preview-Page.png)](https://postimg.cc/NKzNPmg1)
 [![Recipe-Page.png](https://i.postimg.cc/J4kHnNW8/Recipe-Page.png)](https://postimg.cc/mtTgpFDp)
 [![Reminders-Page.png](https://i.postimg.cc/d1ZZyrTG/Reminders-Page.png)](https://postimg.cc/5Y1tcHgt)
-[![Reminders-Create-Page.png](https://i.postimg.cc/Y9Pj29nj/Reminders-Create-Page.png)](https://postimg.cc/vgWG3Qdd)
+[![Reminder-Create-Page.png](https://i.postimg.cc/hP3RrsjM/Reminder-Create-Page.png)](https://postimg.cc/hfxY49V7)
+[![Bmi-Page.png](https://i.postimg.cc/L65rnPTP/Bmi-Page.png)](https://postimg.cc/ppN0Sp3V)
 
 ## FEATURES
 ```
@@ -55,6 +56,11 @@ New icons
 >29.5. 2021
 ```
 Updated Main Page (Recommended page)
+```
+>30.5. 2021
+```
+Updated BMI page
+Updated ReminderCreate page
 ```
 
 
