@@ -74,7 +74,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
-                                     Command="{Binding FirstMealCommand}"
+                                     Command="{Binding Wg1Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wg2.jpg"
@@ -83,7 +83,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
-                                     Command="{Binding SecondMealCommand}"
+                                     Command="{Binding Wg2Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wg3.jpg"
@@ -92,7 +92,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
-                                     
+                                     Command="{Binding Wg3Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wg4.jpg"
@@ -101,6 +101,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wg4Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wg5.jpg"
@@ -109,6 +110,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wg5Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="wg6.jpg"
@@ -117,6 +119,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Wg6Command}"
                                      CornerRadius="15"/>
 
                     </Grid>
@@ -293,6 +296,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Br1Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="br2.jpg"
@@ -301,6 +305,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Br2Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="br3.jpg"
@@ -309,6 +314,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Br3Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="br4.jpg"
@@ -317,6 +323,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Br4Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="br5.jpg"
@@ -325,6 +332,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Br5Command}"
                                      CornerRadius="15"/>
 
                         <ImageButton Source="br6.jpg"
@@ -333,6 +341,7 @@
                                      VerticalOptions="Center"
                                      HorizontalOptions="Center"
                                      Margin="10,0,10,0"
+                                     Command="{Binding Br6Command}"
                                      CornerRadius="15"/>
 
 
